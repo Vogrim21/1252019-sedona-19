@@ -10,97 +10,87 @@
         <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="102" height="83" alt="Логотип Седона">
       </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
-              <a>Главная</a>
-            </li class="site-list__item">
-            <li>
-              <a href="photo.html">фото и видео</a>
-            </li>
-            <li class="site-list__item">
-              <a href="form.html">Форма отзыва</a>
-            </li>
-            <li class="site-list__item">
-              <a href="https://htmlacademy.ru">HTML academy</a>
-            </li>
-          </ul>
-        </div>
+        <button class="main-nav__toggle visually-hidden" type="button">Открыть меню</button>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--active">
+            <a>Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a href="photo.html">фото и видео</a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html">Форма отзыва</a>
+          </li>
+          <li class="site-list__item">
+            <a href="https://htmlacademy.ru">HTML academy</a>
+          </li>
+        </ul>
       </nav>
     </header>
     <main class="page-main">
-      <h1 class="visually-hidden">Отзыв</h1>
-      <section class="main-welcome welcome">
-        <img class="welcome__subtitle" src="#">
-        <img class="welcome__block__bottom" src="#">
-      </section>
-      <form class="page-main__feedback form" action="https://echo.htmlacademy.ru/courses" method="get">
-        <header class="form__header">
-          <h2 class="form__header__title">Оставьте свой отзыв</h2>
-          <p class="form__header__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+      <h1 class="visually-hidden">Добро пожаловать в Седону!</h1>
+      <div class="page-main__welcome welcome">
+        <img class="welcome__title" src="#" alt="Приветствие Седона.">
+        <img class="welcome__bottom" src="#" alt="Нижний фон гор">
+      </div>
+      <section class="advantages">
+        <header class="advantages__header">
+          <h2 class="visually-hidden">Преимущества города Седона.</h2>
+          <b class="advantages__slogan">СЕДОНА — небольшой городок в АРИЗОНЕ, заслуживающий большего!</b>
+          <p class="advantages__intro">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
         </header>
-        <fieldset class="form__group">
-          <legend class="form__group__name">Представьтесь:</legend>
-          <label class="form__label__login" for="login">Имя*:</label>
-          <input class="form__group__login" id="name" name="login" type="text" placeholder="Петр" required>
-          <label class="form__label__family" for="family">Фамилия*:</label>
-          <input class="form__group__family" id="family" name="family" type="text" placeholder="Иванов" required>
-          <label class="form__label__lastname" for="lastname">Отчество:</label>
-          <input class="form__group__lastname" id="lastname" name="lastname" type="text" placeholder="Александрович" required>
-        </fieldset>
-        <fieldset class="form__group">
-          <legend class="form__group__name">Контактная информация:</legend>
-          <label class="form__label__number" for="tel">Контактный телефон*:</label>
-          <input class="form__group__number" id="tel" name="tel" type="tel" placeholder="Введите телефон" required>
-          <label class="form__label__img-tel" for="img-tel"></label>
-          <input class="form__group__img-tel" id="img-tel" name="img-tel" type="image">
-          <label class="form__label__mail" for="mail">Электронная почта*:</label>
-          <input class="form__group__mail" id="mail" name="mail" type="text" placeholder="Введите e-mail" required>
-          <label class="form__label__img-mail" for="img-mail"></label>
-          <input class="form__group__img-mail" id="img-mail" name="img-mail" type="image">
-        </fieldset>
-        <fieldset class="form__group">
-          <legend class="form__group__name">Ваше общее впечатление:</legend>
-          <label class="form__label__radio">
-            <input class="form__group__radio" name="plus" type="radio" value="1" checked>
-            <span class="form__item__radio">Скорее положительное</span>
-          </label>
-          <label class="form__label__radio">
-            <input class="form__group__radio" name="minus" type="radio" value="2">
-            <span class="form__item__radio">Скорее отрицательное</span>
-          </label>
-          <label class="form__label__radio">
-            <input class="form__group__radio" name="trouble" type="radio" value="3">
-            <span class="form__item__radio">Затрудняюсь ответить</span>
-          </label>
-        </fieldset>
-        <fieldset class="form__group">
-          <legend class="form__group__name">Посещенные достопримечательности:</legend>
-          <label class="form__label__check">
-            <input  class="form__group__check" name="bridge" type="checkbox" value="1" checked>
-            <span class="form__item__check">Мост Дьявола</span>
-          </label>
-          <label class="form__label__check">
-            <input class="form__group__check" name="mountain" type="checkbox" value="2" checked>
-            <span class="form__item__check">Гора-Колокол</span>
-          </label>
-          <label class="form__label__check">
-            <input class="form__group__check" name="park" type="checkbox" value="3" checked>
-            <span class="form__item__check">Слайд-парк</span>
-          </label>
-          <label class="form__label__check">
-            <input class="form__group__check" name="rock" type="checkbox" value="4">
-            <span class="form__item__check">Красные скалы</span>
-          </label>
-        </fieldset>
-        <fieldset class="form__group">
-          <label class="form__label__text" for="text">Опишите свои эмоции:</label>
-          <textarea  class="form__review" id="text" name="text" placeholder="Опишите подробно все свои восторги"></textarea>
-        </fieldset>
-        <button class="form__submit">Отправить отзыв</button>
-      </form>
-    <footer class="page-footer"></footer>
+        <ol class="advantages__list">
+          <li class="advantages__item">
+            <h3 class="advantages__title">Настоящий городок</h3>
+            <b class="advantages__number">— №1 —</b>
+            <p class="advantages__description">Седона не аттракцион для туристов, там течет настоящая жизнь</p>
+            <img class="advantages__photo" src="img/photo-city.png" width="520" height="260" alt="Фото города Седона">
+            <ul class="advantages__benefits benefits">
+              <li class="benefits__item benefits__item--housing">
+                <h3 class="benefits__title">Жилье</h3>
+                <p class="benefits__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+              </li>
+              <li class="benefits__item benefits__item--Souvenirs">
+                <h3 class="benefits__title">Сувениры</h3>
+                <p class="benefits__description">Не только китайского, но и местного производства!</p>
+              </li>
+              <li class="benefits__item benefits__item--food">
+                <h3 class="benefits__title">Еда</h3>
+                <p class="benefits__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+              </li>
+            </ul>
+          </li>
+          <li class="advantages__item advantages__item__alternative-design"></li>
+            <h3 class="advantages__title">Там есть мост дьявола</h3>
+            <b class="advantages__number">— №2 —</b>
+            <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+            <img class="advantages__photo" src="img/photo-bridge.png" width="520" height="260" alt="Фото моста дьявола">
+          </li>
+          <li class="advantages__item advantages__item__alternative-design"></li>
+            <h3 class="advantages__title">Небольшая площадь</h3>
+            <b class="advantages__number">— №3 —</b>
+            <p class="advantages__description">Все интересные места находятся очень близко</p>
+          </li>
+          <li class="advantages__item advantages__item__alternative-design"></li>
+            <h3 class="advantages__title">Красивая дорога</h3>
+            <b class="advantages__number">— №4 —</b>
+            <p class="advantages__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          </li>
+          <li class="advantages__item"></li>
+            <h3 class="advantages__title">Мало туристов</h3>
+            <b class="advantages__number">— №5 —</b>
+            <p class="advantages__description">Большинство едет в гранд каньон и толпится там</p>
+          </li>
+        </ol>
+        <div class="page-contacts contacts">
+          <h3 class="contacts__title">Заинтересовались?</h3>
+          <p class="contacts__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+          <a class="contacts__hotel" href="#nowhere">Найти гостиницу</a>
+          <img class="contacts__card" src="img/map-mobile.jpg" width="320" height="350" alt="Карта как к нам проехать">
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer">
       <div class="page-footer-social social">
         <h3 class="social__hashtag">#visitsedona</h3>
         <ul class="social__list">

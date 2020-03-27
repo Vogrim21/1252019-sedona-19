@@ -13,10 +13,10 @@
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
+            <li class="site-list__item">
               <a>Главная</a>
-            </li class="site-list__item">
-            <li>
+            </li>
+            <li class="site-list__item site-list__item--active">
               <a href="photo.html">фото и видео</a>
             </li>
             <li class="site-list__item">
@@ -31,35 +31,35 @@
     </header>
     <main class="page-main">
       <h1 class="visually-hidden">Фотографии в Седоне!</h1>
-      <section class="page-main__welcome welcome">
-        <img class="welcome__subtitle" src="#">
-        <img class="welcome__block__bottom" src="#">
-      </section>
+      <div class="page-main__welcome welcome">
+        <img class="welcome__subtitle" src="#" alt="Приветствие Седона.">
+        <img class="welcome__bottom" src="#" alt="Нижний фон гор">
+      </div>
       <section class="photo">
         <header class="photo__header">
           <h2 class="photo__title">фото и видео</h2>
           <p class="photo__intro">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
         </header>
         <ul class="photo__list">
-          <li class="photo__item photo__item__spaces">
+          <li class="photo__item__spaces">
             <p class="photo__subtitle">неродные просторы</p>
             <p class="photo__author">Автор фото: Борис</p>
-            <b class="photo__like">1350</b>
+            <button class="photo__like">1350</button>
           </li>
-          <li class="photo__item photo__item__native-vegetation">
+          <li class="photo__item__native-vegetation">
             <p class="photo__subtitle">Местная растительность</p>
             <p class="photo__author">Автор фото: Сергей</p>
-            <b class="photo__like">143</b>
+            <button class="photo__like">143</button>
           </li>
-          <li class="photo__item photo__item__road-north">
+          <li class="photo__item__road-north">
             <p class="photo__subtitle">Дорога на север</p>
             <p class="photo__author">Автор фото: Петр</p>
-            <b class="photo__like">96</b>
+            <button class="photo__like">96</button>
           </li>
-          <li class="photo__item photo__item__bridge-devil">
+          <li class="photo__item__bridge-devil">
             <p class="photo__subtitle">Мост дьявола</p>
             <p class="photo__author">Автор фото: Антон</p>
-            <b class="photo__like">254</b>
+            <button class="photo__like">254</button>
           </li>
         </ul>
         <div class="photo__video video">
@@ -70,14 +70,14 @@
             <div class="range__toggle"></div>
           </div>
           <div class="photo__contoller controller">
-            <button class="controller__button controller__button__refresh" type="button">обновить экран</button>
-            <button class="controller__button controller__button__subtitles" type="button">субтитры</button>
-            <button class="controller__button controller__button__full-screen" type="button">на весь экран</button>
+            <button class="controller__button controller__button--refresh" type="button">обновить экран</button>
+            <button class="controller__button controller__button--subtitles" type="button">субтитры</button>
+            <button class="controller__button controller__button--full-screen" type="button">на весь экран</button>
           </div>
         </div>
       </section>
     </main>
-    <footer class="page-footer"></footer>
+    <footer class="page-footer">
       <div class="page-footer-social social">
         <h3 class="social__hashtag">#visitsedona</h3>
         <ul class="social__list">

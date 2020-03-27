@@ -6,20 +6,20 @@
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo">
+      <a class="page-header__logo" href="index.html">
         <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="102" height="83" alt="Логотип Седона">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
+            <li class="site-list__item">
               <a>Главная</a>
-            </li class="site-list__item">
-            <li>
-              <a href="photo.html">фото и видео</a>
             </li>
             <li class="site-list__item">
+              <a href="photo.html">фото и видео</a>
+            </li>
+            <li class="site-list__item site-list__item--active">
               <a href="form.html">Форма отзыва</a>
             </li>
             <li class="site-list__item">
@@ -31,15 +31,15 @@
     </header>
     <main class="page-main">
       <h1 class="visually-hidden">Отзыв</h1>
-      <section class="page-main__welcome welcome">
-        <img class="welcome__subtitle" src="#">
-        <img class="welcome__block__bottom" src="#">
-      </section>
+      <div class="page-main__welcome welcome">
+        <img class="welcome__subtitle" src="#" alt="Приветствие Седона.">
+        <img class="welcome__bottom" src="#" alt="Нижний фон гор">
+      </div>
+      <header class="page-main__header">
+        <h2 class="page-main__header-title">Оставьте свой отзыв</h2>
+        <p class="page-main__header-text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+      </header>
       <form class="page-feedback-form form" action="https://echo.htmlacademy.ru/courses" method="get">
-        <header class="form__header">
-          <h2 class="form__header__title">Оставьте свой отзыв</h2>
-          <p class="form__header__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
-        </header>
         <fieldset class="form__group">
           <legend class="form__group__name">Представьтесь:</legend>
           <label class="form__label__login" for="login">Имя*:</label>
@@ -100,7 +100,7 @@
         </fieldset>
         <button class="form__submit">Отправить отзыв</button>
       </form>
-    <footer class="page-footer"></footer>
+    <footer class="page-footer">
       <div class="page-footer-social social">
         <h3 class="social__hashtag">#visitsedona</h3>
         <ul class="social__list">
