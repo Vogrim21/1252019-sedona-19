@@ -35,70 +35,70 @@
         <img class="welcome__subtitle" src="#">
         <img class="welcome__block__bottom" src="#">
       </section>
-      <form>
-        <header>
-          <h2>Оставьте свой отзыв</h2>
-          <p>Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+      <form class="feedback__form" action="https://echo.htmlacademy.ru/courses" method="get">
+        <header class="form__header">
+          <h2 class="form__header__title">Оставьте свой отзыв</h2>
+          <p class="form__header__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         </header>
-        <fieldset>
-          <legend>Представьтесь:</legend>
-          <label>Имя*:</label>
-          <input>
-          <label>Фамилия*:</label>
-          <input>
-          <label>Отчество:</label>
-          <input>
+        <fieldset class="form__group">
+          <legend class="form__group__name">Представьтесь:</legend>
+          <label class="form__label__login" for="login">Имя*:</label>
+          <input class="form__group__login" id="name" name="login" type="text" placeholder="Петр" required>
+          <label class="form__label__family" for="family">Фамилия*:</label>
+          <input class="form__group__family" id="family" name="family" type="text" placeholder="Иванов" required>
+          <label class="form__label__lastname" for="lastname">Отчество:</label>
+          <input class="form__group__lastname" id="lastname" name="lastname" type="text" placeholder="Александрович" required>
         </fieldset>
-        <fieldset>
-          <legend>Контактная информация:</legend>
-          <label>Контактный телефон*:</label>
-          <input>
-          <label></label>
-          <input>
-          <label>Электронная почта*:</label>
-          <input>
-          <label></label>
-          <input>
+        <fieldset class="form__group">
+          <legend class="form__group__name">Контактная информация:</legend>
+          <label class="form__label__number" for="tel">Контактный телефон*:</label>
+          <input class="form__group__number" id="tel" name="tel" type="tel" placeholder="Введите телефон" required>
+          <label class="form__label__img-tel" for="img-tel"></label>
+          <input class="form__group__img-tel" id="img-tel" name="img-tel" type="image">
+          <label class="form__label__mail" for="mail">Электронная почта*:</label>
+          <input class="form__group__mail" id="mail" name="mail" type="text" placeholder="Введите e-mail" required>
+          <label class="form__label__img-mail" for="img-mail"></label>
+          <input class="form__group__img-mail" id="img-mail" name="img-mail" type="image">
         </fieldset>
-        <fieldset>
-          <legend>Ваше общее впечатление:</legend>
-          <label>
-            <input>
-            <span>Скорее положительное</span>
+        <fieldset class="form__group">
+          <legend class="form__group__name">Ваше общее впечатление:</legend>
+          <label class="form__label__radio">
+            <input class="form__group__radio" name="plus" type="radio" value="1" checked>
+            <span class="form__item__radio">Скорее положительное</span>
           </label>
-          <label>
-            <input>
-            <span>Скорее отрицательное</span>
+          <label class="form__label__radio">
+            <input class="form__group__radio" name="minus" type="radio" value="2">
+            <span class="form__item__radio">Скорее отрицательное</span>
           </label>
-          <label>
-            <input>
-            <span>Затрудняюсь ответить</span>
-          </label>
-        </fieldset>
-        <fieldset>
-          <legend>Посещенные достопримечательности:</legend>
-          <label>
-            <input>
-            <span>Мост Дьявола</span>
-          </label>
-          <label>
-            <input>
-            <span>Гора-Колокол</span>
-          </label>
-          <label>
-            <input>
-            <span>Слайд-парк</span>
-          </label>
-          <label>
-            <input>
-            <span>Красные скалы</span>
+          <label class="form__label__radio">
+            <input class="form__group__radio" name="trouble" type="radio" value="3">
+            <span class="form__item__radio">Затрудняюсь ответить</span>
           </label>
         </fieldset>
-        <fieldset>
-          <label>Опишите свои эмоции:</label>
-          <textarea></textarea>
+        <fieldset class="form__group">
+          <legend class="form__group__name">Посещенные достопримечательности:</legend>
+          <label class="form__label__check">
+            <input  class="form__group__check" name="bridge" type="checkbox" value="1" checked>
+            <span class="form__item__check">Мост Дьявола</span>
+          </label>
+          <label class="form__label__check">
+            <input class="form__group__check" name="mountain" type="checkbox" value="2" checked>
+            <span class="form__item__check">Гора-Колокол</span>
+          </label>
+          <label class="form__label__check">
+            <input class="form__group__check" name="park" type="checkbox" value="3" checked>
+            <span class="form__item__check">Слайд-парк</span>
+          </label>
+          <label class="form__label__check">
+            <input class="form__group__check" name="rock" type="checkbox" value="4">
+            <span class="form__item__check">Красные скалы</span>
+          </label>
         </fieldset>
-        <button>Отправить отзыв</button>
+        <fieldset class="form__group">
+          <label class="form__label__text" for="text">Опишите свои эмоции:</label>
+          <textarea  class="form__review" id="text" name="text" placeholder="Опишите подробно все свои восторги"></textarea>
+        </fieldset>
+        <button class="form__submit">Отправить отзыв</button>
       </form>
     <footer class="page-footer"></footer>
       <div class="page-footer__social social">
