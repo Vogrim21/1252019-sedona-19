@@ -10,30 +10,27 @@
         <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="102" height="83" alt="Логотип Седона">
       </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a>Главная</a>
-            </li>
-            <li class="site-list__item site-list__item--active">
-              <a href="photo.html">фото и видео</a>
-            </li>
-            <li class="site-list__item">
-              <a href="form.html">Форма отзыва</a>
-            </li>
-            <li class="site-list__item">
-              <a href="https://htmlacademy.ru">HTML academy</a>
-            </li>
-          </ul>
-        </div>
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <ul class="main-nav__site site-list">
+          <li class="site-list__item">
+            <a>Главная</a>
+          </li>
+          <li class="site-list__item site-list__item--active">
+            <a href="photo.html">фото и видео</a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html">Форма отзыва</a>
+          </li>
+          <li class="site-list__item">
+            <a href="https://htmlacademy.ru">HTML academy</a>
+          </li>
+        </ul>
       </nav>
     </header>
     <main class="page-main">
       <h1 class="visually-hidden">Фотографии в Седоне!</h1>
       <div class="page-main__welcome welcome">
-        <img class="welcome__subtitle" src="#" alt="Приветствие Седона.">
-        <img class="welcome__bottom" src="#" alt="Нижний фон гор">
+        <img class="welcome__subtitle" src="img/sedona.svg" alt="Приветствие Седона">
       </div>
       <section class="photo">
         <header class="photo__header">
@@ -44,42 +41,42 @@
           <li class="photo__item__spaces">
             <p class="photo__subtitle">неродные просторы</p>
             <p class="photo__author">Автор фото: Борис</p>
-            <button class="photo__like">1350</button>
+            <a class="photo__like">1350</a>
           </li>
           <li class="photo__item__native-vegetation">
             <p class="photo__subtitle">Местная растительность</p>
             <p class="photo__author">Автор фото: Сергей</p>
-            <button class="photo__like">143</button>
+            <a class="photo__like">143</a>
           </li>
           <li class="photo__item__road-north">
             <p class="photo__subtitle">Дорога на север</p>
             <p class="photo__author">Автор фото: Петр</p>
-            <button class="photo__like">96</button>
+            <a class="photo__like">96</a>
           </li>
           <li class="photo__item__bridge-devil">
             <p class="photo__subtitle">Мост дьявола</p>
             <p class="photo__author">Автор фото: Антон</p>
-            <button class="photo__like">254</button>
+            <a class="photo__like">254</a>
           </li>
         </ul>
         <div class="photo__video video">
-          <h3 class="video__title"></h3>
-          <p class="video__text"></p>
+          <b class="video__title">Все еще сомневаетесь?</b>
+          <p class="video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
           <div class="video__range range">
-            <div class="range__scale">
+            <div class="range__scale"></div>
             <div class="range__toggle"></div>
           </div>
           <div class="photo__contoller controller">
-            <button class="controller__button controller__button--refresh" type="button">обновить экран</button>
-            <button class="controller__button controller__button--subtitles" type="button">субтитры</button>
-            <button class="controller__button controller__button--full-screen" type="button">на весь экран</button>
+            <a class="controller__link controller__link--refresh"><span class="visually hidden">Обновить экран</span></a>
+            <a class="controller__link controller__link--subtitles"><span class="visually hidden">Субтитры</span></a>
+            <a class="controller__link controller__link--full-screen"><span class="visually hidden">На весь экран</span></a>
           </div>
         </div>
-      </section>
+      </section>>
     </main>
     <footer class="page-footer">
       <div class="page-footer-social social">
-        <h3 class="social__hashtag">#visitsedona</h3>
+        <a class="social__hashtag">#visitsedona</a>
         <ul class="social__list">
           <li class="social__item">
             <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy">Мы в Твиттере</a>
@@ -99,3 +96,4 @@
     </footer>
   </body>
 </html>
+

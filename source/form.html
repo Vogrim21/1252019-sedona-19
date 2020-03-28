@@ -10,30 +10,27 @@
         <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="102" height="83" alt="Логотип Седона">
       </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a>Главная</a>
-            </li>
-            <li class="site-list__item">
-              <a href="photo.html">фото и видео</a>
-            </li>
-            <li class="site-list__item site-list__item--active">
-              <a href="form.html">Форма отзыва</a>
-            </li>
-            <li class="site-list__item">
-              <a href="https://htmlacademy.ru">HTML academy</a>
-            </li>
-          </ul>
-        </div>
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <ul class="main-nav__site site-list">
+          <li class="site-list__item">
+            <a>Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a href="photo.html">фото и видео</a>
+          </li>
+          <li class="site-list__item site-list__item--active">
+            <a href="form.html">Форма отзыва</a>
+          </li>
+          <li class="site-list__item">
+            <a href="https://htmlacademy.ru">HTML academy</a>
+          </li>
+        </ul>
       </nav>
     </header>
     <main class="page-main">
       <h1 class="visually-hidden">Отзыв</h1>
       <div class="page-main__welcome welcome">
-        <img class="welcome__subtitle" src="#" alt="Приветствие Седона.">
-        <img class="welcome__bottom" src="#" alt="Нижний фон гор">
+        <img class="welcome__subtitle" src="img/sedona.svg" alt="Приветствие Седона">
       </div>
       <header class="page-main__header">
         <h2 class="page-main__header-title">Оставьте свой отзыв</h2>
@@ -43,7 +40,7 @@
         <fieldset class="form__group">
           <legend class="form__group__name">Представьтесь:</legend>
           <label class="form__label__login" for="login">Имя*:</label>
-          <input class="form__group__login" id="name" name="login" type="text" placeholder="Петр" required>
+          <input class="form__group__login" id="login" name="login" type="text" placeholder="Петр" required>
           <label class="form__label__family" for="family">Фамилия*:</label>
           <input class="form__group__family" id="family" name="family" type="text" placeholder="Иванов" required>
           <label class="form__label__lastname" for="lastname">Отчество:</label>
@@ -54,11 +51,11 @@
           <label class="form__label__number" for="tel">Контактный телефон*:</label>
           <input class="form__group__number" id="tel" name="tel" type="tel" placeholder="Введите телефон" required>
           <label class="form__label__img-tel" for="img-tel"></label>
-          <input class="form__group__img-tel" id="img-tel" name="img-tel" type="image">
+          <input class="form__group__img-tel" id="img-tel" name="img-tel" type="image" alt="Изображение телефона">
           <label class="form__label__mail" for="mail">Электронная почта*:</label>
           <input class="form__group__mail" id="mail" name="mail" type="text" placeholder="Введите e-mail" required>
           <label class="form__label__img-mail" for="img-mail"></label>
-          <input class="form__group__img-mail" id="img-mail" name="img-mail" type="image">
+          <input class="form__group__img-mail" id="img-mail" name="img-mail" type="image" alt="Изображение почты">
         </fieldset>
         <fieldset class="form__group">
           <legend class="form__group__name">Ваше общее впечатление:</legend>
@@ -100,9 +97,10 @@
         </fieldset>
         <button class="form__submit">Отправить отзыв</button>
       </form>
+    </main>
     <footer class="page-footer">
       <div class="page-footer-social social">
-        <h3 class="social__hashtag">#visitsedona</h3>
+        <a class="social__hashtag">#visitsedona</a>
         <ul class="social__list">
           <li class="social__item">
             <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy">Мы в Твиттере</a>
@@ -122,3 +120,4 @@
     </footer>
   </body>
 </html>
+
