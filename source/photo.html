@@ -13,10 +13,10 @@
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <ul class="main-nav__site site-list">
           <li class="site-list__item">
-            <a>Главная</a>
+            <a href="index.html">Главная</a>
           </li>
           <li class="site-list__item site-list__item--active">
-            <a href="photo.html">фото и видео</a>
+            <a href="photo.html">Фото и видео</a>
           </li>
           <li class="site-list__item">
             <a href="form.html">Форма отзыва</a>
@@ -30,69 +30,75 @@
     <main class="page-main">
       <h1 class="visually-hidden">Фотографии в Седоне!</h1>
       <div class="page-main__welcome welcome">
-        <img class="welcome__symbol" src="img/sedona.svg" alt="Приветствие Седона">
+        <img class="welcome__emblem" src="img/sedona.svg" alt="Приветствие Седона">
       </div>
       <section class="photo">
-        <header class="photo__header">
-          <h2 class="photo__title">фото и видео</h2>
-          <p class="photo__intro">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+        <header class="photo__header section-header">
+          <h2 class="section-header__title">Фото и видео</h2>
+          <p class="section-header__intro">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
         </header>
         <ul class="photo__list">
-          <li class="photo__item__spaces">
-            <p class="photo__subtitle">неродные просторы</p>
+          <li class="photo__item photo__item--spaces">
+            <img class="photo__image" src="img/user-1.jpg" width="280" height="280" alt="Неродные просторы">
+            <p class="photo__subtitle">Неродные просторы</p>
             <p class="photo__author">Автор фото: Борис</p>
-            <a class="photo__like">1350</a>
+            <a class="photo__like" href="#nowhere">1350</a>
           </li>
-          <li class="photo__item__native-vegetation">
+          <li class="photo__item photo__item--native-vegetation">
+            <img class="photo__image" src="img/user-2.jpg" width="280" height="280" alt="Местная растительность">
             <p class="photo__subtitle">Местная растительность</p>
             <p class="photo__author">Автор фото: Сергей</p>
-            <a class="photo__like">143</a>
+            <a class="photo__like" href="#nowhere">143</a>
           </li>
-          <li class="photo__item__road-north">
+          <li class="photo__item photo__item--road-north">
+            <img class="photo__image" src="img/user-3.jpg" width="280" height="280" alt="Дорога на север">
             <p class="photo__subtitle">Дорога на север</p>
             <p class="photo__author">Автор фото: Петр</p>
-            <a class="photo__like">96</a>
+            <a class="photo__like" href="#nowhere">96</a>
           </li>
-          <li class="photo__item__bridge-devil">
+          <li class="photo__item photo__item--bridge-devil">
+            <img class="photo__image" src="img/user-4.jpg" width="280" height="280" alt="Мост дьявола">
             <p class="photo__subtitle">Мост дьявола</p>
             <p class="photo__author">Автор фото: Антон</p>
-            <a class="photo__like">254</a>
+            <a class="photo__like" href="#nowhere">254</a>
           </li>
         </ul>
-        <div class="photo__video video">
-          <b class="video__title">Все еще сомневаетесь?</b>
-          <p class="video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+      </section>
+      <div class="video">
+        <b class="video__title">Все еще сомневаетесь?</b>
+        <p class="video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+        <div class="video__wrapper">
+          <video class="video__src" poster="img/video-1.jpg" src="#">
           <div class="video__range range">
-            <div class="range__scale"></div>
-            <div class="range__toggle"></div>
+            <button class="range__toggle" alt="Перемотка видео"></button>
           </div>
-          <div class="photo__contoller controller">
-            <a class="controller__link controller__link--refresh"><span class="visually hidden">Обновить экран</span></a>
-            <a class="controller__link controller__link--subtitles"><span class="visually hidden">Субтитры</span></a>
-            <a class="controller__link controller__link--full-screen"><span class="visually hidden">На весь экран</span></a>
+          <div class="video__contoller controller">
+            <a class="controller__link controller__link--refresh" href="#nowhere"><span class="visually hidden">Обновить экран</span></a>
+            <a class="controller__link controller__link--subtitles" href="#nowhere"><span class="visually hidden">Субтитры</span></a>
+            <a class="controller__link controller__link--full-screen" href="#nowhere"><span class="visually hidden">На весь экран</span></a>
           </div>
         </div>
-      </section>>
+      </div>
     </main>
     <footer class="page-footer">
       <h2 class="visually-hidden">Социальные сети</h2>
-      <div class="page-footer-social social">
-        <a class="social__hashtag">#visitsedona</a>
+      <div class="page-footer__social social">
+        <a class="social__hashtag" href="#nowhere">#visitsedona</a>
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy">Мы в Твиттере</a>
+            <a class="social__link social__link--twitter" href="#nowhere"><span class="visually-hidden">Мы в Твиттере</span></a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--facebook" href="https://facebook.com/htmlacademy">Мы в Фейсбуке</a>
+            <a class="social__link social__link--facebook" href="#nowhere"><span class="visually-hidden">Мы в Фейсбуке</span></a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--youtube" href="#nowhere">Мы в Ютубе</a>
+            <a class="social__link social__link--youtube" href="#nowhere"><span class="visually-hidden">Мы в Ютубе</span></a>
           </li>
         </ul>
       </div>
-      <div class="page-footer-copyright copyright">
+      <div class="page-footer__copyright copyright">
         <b class="copyright__text">Разработано</b>
-        <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       </div>
     </footer>
   </body>
