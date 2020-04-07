@@ -48,7 +48,7 @@
             <span class="form__label">Фамилия*:</span>
           </label>
           <label class="form__field-item">
-            <input class="form__field" name="lastname" type="text" placeholder="Александрович" required>
+            <input class="form__field" name="lastname" type="text" placeholder="Александрович">
             <span class="form__label">Отчество:</span>
           </label>
         </fieldset>
@@ -58,51 +58,49 @@
             <input class="form__field" name="tel" type="tel" placeholder="Введите телефон" required>
             <span class="form__label">Контактный телефон*:</span>
           </label>
-          <label class="form__field-item">
-            <input class="form__field form__field--number" name="img-tel" type="image" alt="Изображение телефона">
-            <span class="visually-hidden">Изображение телефона</span>
+          <label class="form__field-item form__field-item--contacts">
+            <input class="form__field form__field--number" name="img-tel" type="image">
           </label>
           <label class="form__field-item">
             <input class="form__field" name="mail" type="text" placeholder="Введите e-mail" required>
             <span class="form__label">Электронная почта*:</span>
           </label>
-          <label class="form__field-item">
-            <input class="form__field form__field--mail" name="img-mail" type="image" alt="Изображение почты">
-            <span class="visually-hidden">Изображение почты</span>
+          <label class="form__field-item form__field-item--contacts">
+            <input class="form__field form__field--mail" name="img-mail" type="image">
           </label>
         </fieldset>
         <fieldset class="form__group form__group--fields-radio">
           <legend class="form__group-name">Ваше общее впечатление:</legend>
-          <label class="form__field-item form__field-item--radio">
-            <input class="form__radio" name="radio" type="radio" value="1" checked>
-            <span class="form__label_radio">Скорее положительное</span>
+          <label class="form__check-item form__field-item--recall">
+            <input class="form__check visually-hidden" name="radio" type="radio" value="1" checked>
+            <span class="form__check-label form__check-label--icon">Скорее положительное</span>
           </label>
-          <label class="form__field-item form__field-item--radio">
-            <input class="form__radio" name="radio" type="radio" value="3">
-            <span class="form__label_radio">Скорее отрицательное</span>
+          <label class="form__check-item form__check-item--recall">
+            <input class="form__check visually-hidden" name="radio" type="radio" value="3">
+            <span class="form__check-label form__check-label--icon">Скорее отрицательное</span>
           </label>
-          <label class="form__field-item form__field-item--radio">
-            <input class="form__radio" name="radio" type="radio" value="2">
-            <span class="form__label_radio">Затрудняюсь ответить</span>
+          <label class="form__check-item form__check-item--recall">
+            <input class="form__check visually-hidden" name="radio" type="radio" value="2">
+            <span class="form__check-label form__check-label--icon">Затрудняюсь ответить</span>
           </label>
         </fieldset>
         <fieldset class="form__group form__group--fields-check">
           <legend class="form__group-name">Посещенные достопримечательности:</legend>
-          <label class="form__field-item form__field-item--radio">
-            <input  class="form__check" name="check" type="checkbox" value="1" checked>
-            <span class="form__label__check">Мост Дьявола</span>
+          <label class="form__check-item form__check-item--recall">
+            <input  class="form__check visually-hidden" name="check" type="checkbox" value="1" checked>
+            <span class="form__check-label">Мост Дьявола</span>
           </label>
-          <label class="form__field-item form__field-item--radio">
-            <input class="form__check" name="check" type="checkbox" value="2" checked>
-            <span class="form__label__check">Гора-Колокол</span>
+          <label class="form__check-item form__check-item--recall">
+            <input class="form__check visually-hidden" name="check" type="checkbox" value="2" checked>
+            <span class="form__check-label">Гора-Колокол</span>
           </label>
-          <label class="form__field-item form__field-item--radio">
-            <input class="form__check" name="check" type="checkbox" value="3" checked>
-            <span class="form__label__check">Слайд-парк</span>
+          <label class="form__check-item form__check-item--recall">
+            <input class="form__check visually-hidden" name="check" type="checkbox" value="3" checked>
+            <span class="form__check-label">Слайд-парк</span>
           </label>
-          <label class="form__field-item form__field-item--radio">
-            <input class="form__check" name="check" type="checkbox" value="4">
-            <span class="form__label__check">Красные скалы</span>
+          <label class="form__check-item form__check-item--recall">
+            <input class="form__check visually-hidden" name="check" type="checkbox" value="4">
+            <span class="form__check-label">Красные скалы</span>
           </label>
         </fieldset>
         <fieldset class="form__group">
