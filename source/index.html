@@ -6,35 +6,35 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="header__nav">
-      <a class="header__logo">
-        <img class="header__logo-image" src="img/logotype-mobile.svg" width="102" height="83" alt="Логотип Седона">
-      </a>
+    <header class="header">
       <nav>
-        <button class="header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <ul class="header__list">
-          <li class="header__item header__item--active">
-            <a href="index.html">Главная</a>
+          <li>
+            <a class="header__item header__item--active" href="index.html">Главная</a>
           </li>
-          <li class="header__item">
-            <a href="photo.html">Фото и видео</a>
+          <li>
+            <a class="header__item" href="photo.html">Фото и видео</a>
           </li>
-          <li class="header__item">
-            <a href="form.html">Форма отзыва</a>
+          <li>
+            <a class="header__item" href="form.html">Форма отзыва</a>
           </li>
-          <li class="header__item">
-            <a href="https://htmlacademy.ru">HTML academy</a>
+          <li>
+            <a class="header__item" href="https://htmlacademy.ru">HTML academy</a>
           </li>
         </ul>
       </nav>
+      <a class="header__logo">
+        <img class="header__logo-image" src="img/logotype-mobile.svg" width="102" height="83" alt="Логотип Седона">
+      </a>
+      <button class="header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
     </header>
     <main class="main">
       <h1 class="visually-hidden">Добро пожаловать в Седону!</h1>
-      <div class="main__welcome welcome">
-        <img class="welcome__emblem welcome__emblem--symbol" src="img/welcome.svg" width="281" height="214" alt="Приветствие Седона">
+      <div class="welcome">
+        <img class="welcome__emblem" src="img/welcome.svg" width="281" height="214" alt="Приветствие Седона">
       </div>
       <section class="advantages">
-        <header class="advantages__header section-header">
+        <header class="section-header">
           <h2 class="visually-hidden">Преимущества города Седона.</h2>
           <b class="section-header__title">СЕДОНА — небольшой городок в АРИЗОНЕ, заслуживающий большего!</b>
           <p class="section-header__intro">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
@@ -45,7 +45,7 @@
             <b class="advantages__number">— №1 —</b>
             <p class="advantages__description">Седона не аттракцион для туристов, там течет настоящая жизнь</p>
             <img class="advantages__photo" src="img/photo-city.png" width="520" height="260" alt="Фото города Седона">
-            <ul class="advantages__benefits benefits">
+            <ul class="benefits">
               <li class="benefits__item benefits__item--housing">
                 <h4 class="benefits__title">Жилье</h4>
                 <p class="benefits__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
