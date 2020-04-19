@@ -1,0 +1,25 @@
+.products-offers {
+  position: relative;
+  padding-top: 28px;
+
+  &__title {
+    font-size: @otherFontSize;
+  }
+
+  &__text {
+    margin: 0;
+    font-size: @secondaryFontSize;
+    padding: 18px 28px 35px;
+    line-height: 24px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 70%;
+    left: 46%;
+    width: 27px;
+    height: 27px;
+    background-image: url("../../img/icon-map-marker.svg");
+  }
+}

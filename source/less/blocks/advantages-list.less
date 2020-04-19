@@ -1,0 +1,80 @@
+.advantages__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.advantages__item {
+  &--alternative-design {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      height: 37px;
+      width: 320px;
+      left: 0%;
+      top: 0%;
+      background-image: url("../../img/bg-triangle.svg");
+    }
+  }
+
+  &--alternative-design-secondary {
+    background-color: #eeeeee;
+  }
+}
+
+.advantages {
+  &__title {
+    margin: 0;
+    font-size: @baseFontSize;
+    font-weight: 700;
+  }
+
+  &__number,
+  &__description {
+    font-size: @secondaryFontSize;
+    font-weight: 400;
+    line-height: @otherFontSize;
+    margin: 0;
+  }
+
+  &__title--alternative-design {
+    color: @baseColor;
+    padding: 77px 27px 5px 28px;
+  }
+
+  &__number--alternative-design,
+  &__description--alternative-design {
+    color: @baseColor;
+    padding: 15px 27px 39px 28px;
+  }
+
+  &__title--alternative-design-secondary {
+    padding: 20px 0 5px;
+  }
+
+  &__number--alternative-design-secondary,
+  &__description--alternative-design-secondary {
+    position: relative;
+    padding: 14px 37px 35px;
+  }
+}
+
+.advantages__title--alternative-secondary {
+  padding: 38px 27px 5px 28px;
+}
+
+.advantages__description--line::after {
+  content: "";
+  position: absolute;
+  top: 91%;
+  left: 6%;
+  width: 280px;
+  height: 1px;
+  background-color: #d6d6d6;
+}
+
+.advantages__item:last-child .advantages__description {
+  padding-bottom: 27px;
+}
