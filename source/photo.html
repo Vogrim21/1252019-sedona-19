@@ -2,30 +2,32 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta  name="viewport" content="width=device-width, initial-scale=1">
     <title>Седона</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="page-header">
-      <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="102" height="83" alt="Логотип Седона">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        <ul class="main-nav__site site-list">
-          <li class="site-list__item">
-            <a href="index.html">Главная</a>
+    <header class="header">
+      <nav>
+        <ul class="header__list">
+          <li>
+            <a class="header__item" href="index.html">Главная</a>
           </li>
-          <li class="site-list__item site-list__item--active">
-            <a href="photo.html">Фото и видео</a>
+          <li>
+            <a class="header__item header__item--active" href="photo.html">Фото и видео</a>
           </li>
-          <li class="site-list__item">
-            <a href="form.html">Форма отзыва</a>
+          <li>
+            <a class="header__item" href="form.html">Форма отзыва</a>
           </li>
-          <li class="site-list__item">
-            <a href="https://htmlacademy.ru">HTML academy</a>
+          <li>
+            <a class="header__item" href="https://htmlacademy.ru">HTML academy</a>
           </li>
         </ul>
       </nav>
+      <a class="header__logo">
+        <img class="header__logo-image" src="img/logotype-mobile.svg" width="102" height="83" alt="Логотип Седона">
+      </a>
+      <button class="header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
     </header>
     <main class="page-main">
       <h1 class="visually-hidden">Фотографии в Седоне!</h1>
