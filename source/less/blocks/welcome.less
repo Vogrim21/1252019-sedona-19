@@ -1,16 +1,33 @@
 .welcome {
   background-image: url("../../img/bg-back-mobile.jpg");
   padding: 90px 0 77px;
-}
 
-.welcome::after {
-  content: "";
-  position: absolute;
-  right: 0;
-  bottom: -141px;
-  left: 0;
-  height: 26px;
-  background-image: url("../../img/bg-intro-triangle-mobile.svg");
-  background-position: 50% 0%;
-  background-repeat: no-repeat;
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -146px;
+    left: 0;
+    height: 26px;
+    background-image: url("../../img/bg-intro-triangle-mobile.svg");
+    background-position: 50% 0%;
+    background-repeat: no-repeat;
+  }
+
+  &--photo {
+    padding-top: 52px;
+    padding-bottom: 60px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: 87px;
+      left: 0;
+      height: 26px;
+      background-image: url("../../img/bg-intro-triangle-mobile.svg");
+      background-position: 50% 0%;
+      background-repeat: no-repeat;
+    }
+  }
 }
