@@ -25,10 +25,20 @@
   &:nth-child(2) {
     width: 47px;
   }
+
+  &:hover,
+  &:focus {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+  }
 }
 
 .social__link {
-  &--twitter {
+  &--twitter::before {
+    content: "";
     background: url("../../img/icon-twitter.svg") 50% 50% no-repeat;
     position: absolute;
     top: 38%;
@@ -37,7 +47,8 @@
     height: 14px;
   }
 
-  &--facebook {
+  &--facebook::before {
+    content: "";
     background: url("../../img/icon-facebook.svg") 50% 50% no-repeat;
     position: absolute;
     top: 30%;
@@ -46,12 +57,17 @@
     height: 18px;
   }
 
-  &--youtube {
+  &--youtube::before {
+    content: "";
     background: url("../../img/icon-youtube.svg") 50% 50% no-repeat;
     position: absolute;
     top: 38%;
     left: 30%;
     width: 20px;
     height: 14px;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }

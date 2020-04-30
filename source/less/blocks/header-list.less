@@ -15,17 +15,30 @@
   }
 }
 
+.header__item {
+  line-height: 40px;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
 .header__list li {
   background-color: @secondaryBackgroundColor;
   box-shadow: 0 1px 0 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 0 rgba(255, 255, 255, 0.2);
   min-height: 56px;
   box-sizing: border-box;
   padding-top: 8px;
-}
 
-.header__item {
-  line-height: 40px;
-  text-align: center;
-  text-decoration: none;
-  color: #ffffff;
+  &:hover,
+  &:focus {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+  }
 }
