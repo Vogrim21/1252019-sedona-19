@@ -17,8 +17,7 @@ gulp.task("css", function () {
       autoprefixer()
     ]))
     .pipe(sourcemap.write("."))
-    .pipe(gulp.dest("source/css"))
-    .pipe(server.stream());
+    .pipe(gulp.dest("source/css"));
 });
 
 gulp.task("server", function () {
@@ -30,8 +29,13 @@ gulp.task("server", function () {
     ui: false
   });
 
-  gulp.watch("source/less/**/*.less", gulp.series("css"));
+  gulp.watch("source/less/**/*.less", gulp.series("css", "reload"));
   gulp.watch("source/*.html").on("change", server.reload);
+});
+
+gulp.task("reload", function(done) {
+  server.reload();
+  done();
 });
 
 gulp.task("start", gulp.series("css", "server"));

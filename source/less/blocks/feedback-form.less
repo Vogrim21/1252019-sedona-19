@@ -9,7 +9,7 @@
   text-align: left;
 
   &--comment {
-    padding: 34px 0 44px 0;
+    padding: 34px 0 51px 0;
     text-align: center;
   }
 }
@@ -69,14 +69,14 @@
   &--image-tel {
     padding-left: 21px;
 
-    &--image-tel::after {
+    &::after {
       content: "";
       position: absolute;
       width: 58px;
       height: 58px;
       right: -89px;
       top: 29px;
-      background: url("../../img/icon-phone.svg") 50% 50% no-repeat;
+      background: url("../img/icon-phone.svg") 50% 50% no-repeat;
       background-color: #e6e6e6;
       z-index: 1;
     }
@@ -85,14 +85,14 @@
   &--image-mail {
     padding-left: 20px;
 
-    &--image-mail::after {
+    &::after {
       content: "";
       position: absolute;
       width: 58px;
       height: 58px;
       right: -105px;
       top: 29px;
-      background: url("../../img/icon-mail.svg") 50% 50% no-repeat;
+      background: url("../img/icon-mail.svg") 50% 50% no-repeat;
       background-color: #e6e6e6;
       z-index: 1;
     }
@@ -109,9 +109,14 @@
   width: 230px;
   height: 58px;
   background-color: #f2f2f2;
-  color: #000000;
   box-sizing: border-box;
   margin-bottom: 20px;
+  font-family: @baseFont;
+
+  &::placeholder {
+    color: inherit;
+    opacity: 1;
+  }
 
   &--lastname {
     width: 192px;
@@ -210,7 +215,7 @@
 }
 
 .feedback-form__check:checked + .feedback-form__check-label::before {
-  background-image: url("../../img/icon-tick.svg");
+  background-image: url("../img/icon-tick.svg");
   background-position: 50% 50%;
   background-repeat: no-repeat;
   border: none;

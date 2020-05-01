@@ -1,6 +1,6 @@
 .social__hashtag {
   text-decoration: none;
-  color: @otherColor;
+  color: #000000;
   font-size: 21px;
   font-weight: 700;
   margin-bottom: 41px;
@@ -16,15 +16,19 @@
 }
 
 .social__item {
-  position: relative;
-  width: 46px;
-  height: 48px;
-  background-color: @secondaryBackgroundColor;
   margin-right: 6px;
 
   &:nth-child(2) {
     width: 47px;
   }
+}
+
+.social__link {
+  display: block;
+  position: relative;
+  width: 46px;
+  height: 48px;
+  background-color: @secondaryBackgroundColor;
 
   &:hover,
   &:focus {
@@ -34,12 +38,10 @@
   &:active {
     background-color: #5496bd;
   }
-}
 
-.social__link {
   &--twitter::before {
     content: "";
-    background: url("../../img/icon-twitter.svg") 50% 50% no-repeat;
+    background: url("../img/icon-twitter.svg") 50% 50% no-repeat;
     position: absolute;
     top: 38%;
     left: 30%;
@@ -49,7 +51,7 @@
 
   &--facebook::before {
     content: "";
-    background: url("../../img/icon-facebook.svg") 50% 50% no-repeat;
+    background: url("../img/icon-facebook.svg") 50% 50% no-repeat;
     position: absolute;
     top: 30%;
     left: 38%;
@@ -59,15 +61,11 @@
 
   &--youtube::before {
     content: "";
-    background: url("../../img/icon-youtube.svg") 50% 50% no-repeat;
+    background: url("../img/icon-youtube.svg") 50% 50% no-repeat;
     position: absolute;
     top: 38%;
     left: 30%;
     width: 20px;
     height: 14px;
-  }
-
-  &:active {
-    opacity: 0.3;
   }
 }

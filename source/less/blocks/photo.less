@@ -1,3 +1,55 @@
 .photo {
   padding-top: 37px;
 }
+
+.photo__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.photo__item {
+  text-align: left;
+  font-size: 14px;
+  line-height: 24px;
+  padding-left: 20px;
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 16px;
+  padding-top: 22px;
+
+  &:nth-child(3),
+  &:nth-child(4) {
+    padding-bottom: 17px;
+  }
+}
+
+.photo__subtitle {
+  margin: 0;
+  font-weight: 700;
+  padding-top: 9px;
+}
+
+.photo__author {
+  margin: 0;
+  padding-bottom: 8px;
+  text-transform: none;
+}
+
+.photo__like {
+  position: relative;
+  margin: 0;
+  text-decoration: none;
+  font-weight: 700;
+  padding-left: 36px;
+  color: #000000;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background: url("../img/icon-like.svg") 50% 50% no-repeat;
+    width: 23px;
+    height: 23px;
+    left: 0;
+    top: -7px;
+  }
+}
