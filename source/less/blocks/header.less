@@ -9,6 +9,11 @@
   position: relative;
   margin: 0;
   padding: 0;
+
+  @media @tablet {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .header__item {
@@ -39,6 +44,21 @@
   &--alternative {
     box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.2);
   }
+
+  @media @tablet {
+    min-width: 153px;
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 14px;
+
+    .header__item:nth-child(2) {
+      padding-right: 27px;
+    }
+
+    .header__item:nth-child(3) {
+      padding-left: 27px;
+    }
+  }
 }
 
 .header__logo-image {
@@ -46,6 +66,11 @@
   left: 50%;
   transform: translateX(-50%);
   z-index: 1;
+
+  @media @tablet {
+    top: 0;
+    padding: 0 27px 0;
+  }
 }
 
 .header__toggle {

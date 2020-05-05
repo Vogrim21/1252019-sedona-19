@@ -70,14 +70,16 @@
         <b class="video__title">Все еще сомневаетесь?</b>
         <p class="video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
         <div class="video__wrapper">
-          <video class="video__src" poster="img/video-1.jpg" src="#">
+          <img class="video__src" src="img/video-1.jpg">
           <div class="video__contoller">
             <div class="video__range">
-              <button class="video__toggle" alt="Перемотка видео"></button>
+              <button class="video__toggle"><span class="visually-hidden">Перемотка видео</span></button>
             </div>
-            <button class="video__link video__link--refresh"><span class="visually hidden">Обновить экран</span></button>
-            <button class="video__link video__link--subtitles"><span class="visually hidden">Субтитры</span></button>
-            <button class="video__link video__link--full-screen"><span class="visually hidden">На весь экран</span></button>
+            <div class="video__conteiner">
+              <button class="video__link video__link--refresh"><span class="visually-hidden">Обновить экран</span></button>
+              <button class="video__link video__link--subtitles"><span class="visually-hidden">Субтитры</span></button>
+              <button class="video__link video__link--full-screen"><span class="visually-hidden">На весь экран</span></button>
+            </div>
           </div>
         </div>
       </div>
