@@ -28,6 +28,18 @@
   box-sizing: border-box;
   padding-top: 8px;
 
+  &:nth-child(2) {
+    @media @tablet {
+      padding-right: 150px;
+    }
+  }
+
+  &:nth-child(3) {
+    @media @tablet {
+      padding-left: 10px;
+    }
+  }
+
   &:hover,
   &:focus {
     background-color: #669ec0;
@@ -50,14 +62,6 @@
     background-color: #ffffff;
     color: #000000;
     font-size: 14px;
-
-    .header__item:nth-child(2) {
-      padding-right: 27px;
-    }
-
-    .header__item:nth-child(3) {
-      padding-left: 27px;
-    }
   }
 }
 

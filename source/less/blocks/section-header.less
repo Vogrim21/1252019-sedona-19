@@ -1,6 +1,10 @@
 .section-header {
   padding: 0 33px 0 32px;
 
+  @media @tablet {
+    padding: 10px 139px 43px;
+  }
+
   &--photo {
     padding: 0 22px 23px 25px;
     border-bottom: 1px solid #e5e5e5;
@@ -8,6 +12,12 @@
 
   &--form {
     padding: 0 0 13px;
+  }
+}
+
+.section-header__title {
+  @media @tablet {
+    font-size: 21px;
   }
 }
 

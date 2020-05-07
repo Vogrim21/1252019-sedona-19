@@ -3,6 +3,15 @@
   background-image: url("../img/bg-back-mobile.jpg");
   padding: 90px 0 77px;
 
+  @media @tablet {
+    position: relative;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-position: 50% 0%;
+    background-repeat: no-repeat;
+    min-height: 518px;
+    padding: 0;
+  }
+
   &::after {
     content: "";
     position: absolute;
@@ -13,20 +22,22 @@
     background-image: url("../img/bg-intro-triangle-mobile.svg");
     background-position: 50% 0%;
     background-repeat: no-repeat;
+
+    @media @tablet {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      height: 57px;
+      background-image: url("../img/bg-intro-triangle-tablet.svg");
+      background-position: 50% 0%;
+      background-repeat: no-repeat;
+    }
   }
-}
 
-.welcome--photo {
-  padding-top: 52px;
-  padding-bottom: 60px;
-
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    height: 26px;
-    background-image: url("../img/bg-intro-triangle-mobile.svg");
-    background-position: 50% 0%;
-    background-repeat: no-repeat;
+  &--photo {
+    padding-top: 52px;
+    padding-bottom: 60px;
   }
 }

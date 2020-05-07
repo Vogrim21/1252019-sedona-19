@@ -6,6 +6,11 @@
   list-style: none;
   margin: 0;
   padding: 0;
+
+  @media @tablet {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .advantages__container {
@@ -13,8 +18,18 @@
 }
 
 .advantages__item {
+  @media @tablet {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
   &--alternative-design {
     position: relative;
+
+    @media @tablet {
+      width: 256px;
+      height: 256px;
+    }
 
     &::before {
       content: "";
@@ -24,6 +39,10 @@
       left: 0;
       top: 0;
       background-image: url("../img/bg-triangle.svg");
+
+      @media @tablet {
+        background-image: none;
+      }
     }
   }
 
