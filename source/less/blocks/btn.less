@@ -1,0 +1,27 @@
+.btn {
+  display: block;
+  box-sizing: border-box;
+  padding: 16px 32px;
+  border: none;
+  width: 280px;
+  height: 58px;
+  background-color: @secondaryBackgroundColor;
+  text-decoration: none;
+  color: @baseColor;
+  font-size: 21px;
+  font-family: inherit;
+
+  &:hover,
+  &:focus {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
+  }
+}

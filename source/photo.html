@@ -2,40 +2,42 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta  name="viewport" content="width=device-width, initial-scale=1">
     <title>Седона</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="page-header">
-      <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="102" height="83" alt="Логотип Седона">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        <ul class="main-nav__site site-list">
-          <li class="site-list__item">
-            <a href="index.html">Главная</a>
+    <header class="header">
+      <nav>
+        <ul class="header__list">
+          <li>
+            <a class="header__item" href="index.html">Главная</a>
           </li>
-          <li class="site-list__item site-list__item--active">
-            <a href="photo.html">Фото и видео</a>
+          <li>
+            <a class="header__item header__item--active" href="photo.html">Фото и видео</a>
           </li>
-          <li class="site-list__item">
-            <a href="form.html">Форма отзыва</a>
+          <li>
+            <a class="header__item" href="form.html">Форма отзыва</a>
           </li>
-          <li class="site-list__item">
-            <a href="https://htmlacademy.ru">HTML academy</a>
+          <li>
+            <a class="header__item" href="https://htmlacademy.ru">HTML academy</a>
           </li>
         </ul>
       </nav>
+      <a class="header__logo">
+        <img class="header__logo-image" src="img/logotype-mobile.svg" width="102" height="83" alt="Логотип Седона">
+      </a>
+      <button class="header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
     </header>
-    <main class="page-main">
+    <main class="main">
       <h1 class="visually-hidden">Фотографии в Седоне!</h1>
-      <div class="page-main__welcome welcome">
-        <img class="welcome__emblem" src="img/sedona.svg" alt="Приветствие Седона">
+      <div class="welcome welcome--photo">
+        <img class="welcome__emblem" src="img/sedona.svg" width="229" height="39" alt="Приветствие Седона">
       </div>
       <section class="photo">
-        <header class="photo__header section-header">
-          <h2 class="section-header__title">Фото и видео</h2>
-          <p class="section-header__intro">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+        <header class="section-header section-header--photo">
+          <b class="section-header__title">Фото и видео</b>
+          <p class="section-header__intro section-header__intro--photo">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
         </header>
         <ul class="photo__list">
           <li class="photo__item photo__item--spaces">
@@ -68,37 +70,41 @@
         <b class="video__title">Все еще сомневаетесь?</b>
         <p class="video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
         <div class="video__wrapper">
-          <video class="video__src" poster="img/video-1.jpg" src="#">
-          <div class="video__range range">
-            <button class="range__toggle" alt="Перемотка видео"></button>
-          </div>
-          <div class="video__contoller controller">
-            <a class="controller__link controller__link--refresh" href="#nowhere"><span class="visually hidden">Обновить экран</span></a>
-            <a class="controller__link controller__link--subtitles" href="#nowhere"><span class="visually hidden">Субтитры</span></a>
-            <a class="controller__link controller__link--full-screen" href="#nowhere"><span class="visually hidden">На весь экран</span></a>
+          <img class="video__src" src="img/video-1.jpg">
+          <div class="video__contoller">
+            <div class="video__range">
+              <button class="video__toggle"><span class="visually-hidden">Перемотка видео</span></button>
+            </div>
+            <div class="video__conteiner">
+              <button class="video__link video__link--refresh"><span class="visually-hidden">Обновить экран</span></button>
+              <button class="video__link video__link--subtitles"><span class="visually-hidden">Субтитры</span></button>
+              <button class="video__link video__link--full-screen"><span class="visually-hidden">На весь экран</span></button>
+            </div>
           </div>
         </div>
       </div>
     </main>
-    <footer class="page-footer">
+    <footer class="footer">
       <h2 class="visually-hidden">Социальные сети</h2>
-      <div class="page-footer__social social">
+      <div class="social">
         <a class="social__hashtag" href="#nowhere">#visitsedona</a>
         <ul class="social__list">
-          <li class="social__item">
+          <li>
             <a class="social__link social__link--twitter" href="#nowhere"><span class="visually-hidden">Мы в Твиттере</span></a>
           </li>
-          <li class="social__item">
+          <li>
             <a class="social__link social__link--facebook" href="#nowhere"><span class="visually-hidden">Мы в Фейсбуке</span></a>
           </li>
-          <li class="social__item">
+          <li>
             <a class="social__link social__link--youtube" href="#nowhere"><span class="visually-hidden">Мы в Ютубе</span></a>
           </li>
         </ul>
       </div>
-      <div class="page-footer__copyright copyright">
+      <div class="copyright">
         <b class="copyright__text">Разработано</b>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <img src="img/logo-htmlacademy.svg" width="27" height="34" alt="HTML Academy">
+        </a>
       </div>
     </footer>
   </body>
