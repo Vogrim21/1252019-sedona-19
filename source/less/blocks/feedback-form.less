@@ -233,11 +233,12 @@
   }
 }
 
-.feedback-form__check-label:hover::before,
-.feedback-form__check-label:hover::after,
-.feedback-form__check:focus + .feedback-form__check-label::before,
-.feedback-form__check:focus + .feedback-form__check-label::after {
-  opacity: 1;
+.feedback-form__check-label:hover,
+.feedback-form__check:focus + .feedback-form__check-label {
+  &::before,
+  &::after {
+    opacity: 1;
+  }
 }
 
 .feedback-form__check:disabled + .feedback-form__check-label {
