@@ -223,12 +223,14 @@
   border: none;
 }
 
-.feedback-form__check:checked + .feedback-form__check-label--radio::before {
-  background-image: none;
-}
+.feedback-form__check:checked + .feedback-form__check-label--radio {
+  &::before {
+    background-image: none;
+  }
 
-.feedback-form__check:checked + .check-label--radio::after {
-  content: "";
+  &::after {
+    content: "";
+  }
 }
 
 .feedback-form__check-label:hover::before,
