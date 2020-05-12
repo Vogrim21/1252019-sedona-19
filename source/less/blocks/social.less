@@ -1,15 +1,32 @@
+.social__wrapper {
+  @media @tablet {
+    display: flex;
+    width: 578px;
+    justify-content: space-around;
+  }
+}
+
 .social__hashtag {
   text-decoration: none;
   color: #000000;
   font-size: 21px;
   font-weight: 700;
+
+  @media @tablet {
+    padding-top: 9px;
+  }
 }
 
 .social__list {
   display: flex;
-  list-style: none;
-  padding: 0;
-  margin: 33px 85px 0 84px;
+  justify-content: center;
+  .list-reset();
+  margin: 33px 0 0;
+
+  @media @tablet {
+    margin: 0;
+    padding-right: 55px;
+  }
 }
 
 .social__link {

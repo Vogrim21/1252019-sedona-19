@@ -8,7 +8,7 @@
     background-image: url("../img/bg-back-tablet@1x.jpg");
     background-position: 50% 0%;
     background-repeat: no-repeat;
-    min-height: 518px;
+    height: 518px;
     padding: 0;
   }
 
@@ -39,5 +39,11 @@
   &--photo {
     padding-top: 52px;
     padding-bottom: 60px;
+
+    @media @tablet {
+      height: 290px;
+      background-position: 50% 100%;
+      padding: 0;
+    }
   }
 }

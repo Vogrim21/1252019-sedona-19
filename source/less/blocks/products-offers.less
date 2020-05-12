@@ -13,18 +13,41 @@
   }
 }
 
+.products-offers__wrapper {
+  @media @tablet {
+    display: flex;
+    flex-direction: column;
+    width: 768px;
+    margin: 0 auto;
+    padding: 27px 0;
+  }
+}
+
 .products-offers__title {
   font-size: 21px;
+
+  @media @tablet {
+    font-size: 30px;
+  }
 }
 
 .products-offers__text {
   font-size: 14px;
   margin: 0;
-  padding: 18px 28px 34px;
+  padding: 18px 8px 35px;
   line-height: 24px;
+
+  @media @tablet {
+    padding: 31px 141px 42px;
+  }
 }
 
 .products-offers__hotel {
-  margin-left: 20px;
   margin-bottom: 49px;
+
+  @media @tablet {
+    width: 458px;
+    align-self: center;
+    margin-bottom: 31px;
+  }
 }

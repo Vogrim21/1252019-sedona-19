@@ -2,12 +2,20 @@
   padding: 0 33px 0 32px;
 
   @media @tablet {
-    padding: 10px 139px 43px;
+    padding: 11px 140px 42px;
   }
 
   &--photo {
-    padding: 0 22px 23px 25px;
+    padding: 0 26px 22px 26px;
     border-bottom: 1px solid #e5e5e5;
+
+    @media @tablet {
+      width: 768px;
+      margin: 0 auto;
+      padding: 0;
+      padding-bottom: 22px;
+      border: none;
+    }
   }
 
   &--form {
@@ -19,6 +27,12 @@
   @media @tablet {
     font-size: 21px;
   }
+
+  &--photo {
+    @media @tablet {
+      font-size: 30px;
+    }
+  }
 }
 
 .section-header__intro {
@@ -29,5 +43,9 @@
   &--photo {
     padding: 25px 0 5px;
     line-height: 24px;
+
+    @media @tablet {
+      padding: 25px 161px 47px;
+    }
   }
 }

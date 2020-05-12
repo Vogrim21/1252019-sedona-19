@@ -1,18 +1,36 @@
 .photo {
   padding-top: 37px;
+
+  @media @tablet {
+    padding-top: 75px;
+  }
+}
+
+.photo__wrapper {
+  @media @tablet {
+    width: 648px;
+    padding: 0 60px;
+    margin: 0 auto;
+  }
 }
 
 .photo__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  display: flex;
+  flex-direction: column;
+  .list-reset();
+
+  @media @tablet {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .photo__item {
   text-align: left;
   font-size: 14px;
   line-height: 24px;
-  padding-left: 20px;
+  padding-left: 21px;
   border-bottom: 1px solid #e5e5e5;
   padding-bottom: 16px;
   padding-top: 22px;
@@ -20,6 +38,81 @@
   &:nth-child(3),
   &:nth-child(4) {
     padding-bottom: 17px;
+
+    @media @tablet {
+      padding: 0;
+    }
+  }
+
+  &:not(:first-child) {
+    width: 324px;
+    height: 347px;
+  }
+
+  @media @tablet {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    border: none;
+    background-color: #eeeeee;
+  }
+}
+
+.photo__image {
+  img {
+    @media @tablet {
+      display: none;
+    }
+  }
+
+  @media @tablet {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    min-width: 648px;
+    min-height: 400px;
+    background-image: url("../img/photo-sunset-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+
+    &--native-vegetation {
+      @media @tablet {
+        min-width: 324px;
+        min-height: 267px;
+        background-image: url("../img/photo-cactus-tablet@1x.jpg");
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+      }
+    }
+
+    &--road-north {
+      @media @tablet {
+        min-width: 324px;
+        min-height: 267px;
+        background-image: url("../img/photo-roads-tablet@1x.jpg");
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+      }
+    }
+
+    &--bridge-devil {
+      @media @tablet {
+        min-width: 324px;
+        min-height: 267px;
+        background-image: url("../img/photo-bridge-tablet@1x.jpg");
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+      }
+    }
+  }
+}
+
+.photo__wrapper-text {
+  @media @tablet {
+    min-width: 175px;
+    padding-bottom: 24px;
   }
 }
 
@@ -27,12 +120,30 @@
   margin: 0;
   font-weight: 700;
   padding-top: 9px;
+
+  @media @tablet {
+    padding-top: 8px;
+    transform: translate(20px, 8px);
+  }
 }
 
 .photo__author {
   margin: 0;
   padding-bottom: 8px;
   text-transform: none;
+
+  @media @tablet {
+    padding: 0;
+    transform: translate(19px, 7px);
+  }
+}
+
+.photo__wrapper-like {
+  @media @tablet {
+    min-width: 78px;
+    padding-right: 11px;
+    padding-top: 2px;
+  }
 }
 
 .photo__like {
@@ -42,6 +153,10 @@
   font-weight: 700;
   padding-left: 36px;
   color: #000000;
+
+  @media @tablet {
+    align-self: flex-end;
+  }
 
   &::before {
     content: "";

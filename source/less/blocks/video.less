@@ -1,6 +1,22 @@
 .video {
   padding-top: 30px;
   padding-bottom: 105px;
+
+  @media @tablet {
+    padding-bottom: 47px;
+  }
+}
+
+.video__wrapper {
+  min-width: 648px;
+  margin: 0 auto;
+  padding-top: 36px;
+}
+
+.video__title {
+  @media @tablet {
+    font-size: 30px;
+  }
 }
 
 .video__text {
@@ -8,6 +24,29 @@
   line-height: 24px;
   margin: 0;
   padding: 27px 40px 35px 43px;
+
+  @media @tablet {
+    padding: 27px 163px 36px;
+  }
+}
+
+.video__src {
+  img {
+    @media @tablet {
+      display: none;
+    }
+  }
+
+  @media @tablet {
+    background-image: url("../img/video-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    min-width: 648px;
+    min-height: 499px;
+    position: relative;
+    display: block;
+    overflow: hidden;
+  }
 }
 
 .video__contoller {
@@ -24,6 +63,12 @@
   background-color: black;
   transform: translateX(-50%);
 
+  @media @tablet {
+    width: 648px;
+    height: 93px;
+    top: -92px;
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -33,6 +78,12 @@
     left: 22px;
     background-color: #f2f2f2;
     opacity: 0.2;
+
+    @media @tablet {
+      width: 389px;
+      top: 45px;
+      left: 93px;
+    }
   }
 }
 
@@ -43,6 +94,10 @@
   padding: 0;
   background-color: #ffffff;
   transform: translate(-77px, 8px);
+
+  @media @tablet {
+    transform: translate(-113px, 30px);
+  }
 }
 
 .video__conteiner {
@@ -53,6 +108,10 @@
   width: 280px;
   height: 66px;
   background-color: #f2f2f2;
+
+  @media @tablet {
+    background: none;
+  }
 }
 
 .video__link {
@@ -63,17 +122,29 @@
     background: url("../img/icon-video-replay.svg") 50% 50% no-repeat;
     width: 16px;
     transform: translate(-76px, 22px);
+
+    @media @tablet {
+      transform: translate(-249px, -51px);
+    }
   }
 
   &--subtitles {
     background: url("../img/icon-video-subtitles.svg") 50% 50% no-repeat;
     width: 32px;
     transform: translate(52px, 23px);
+
+    @media @tablet {
+      transform: translate(218px, -49px);
+    }
   }
 
   &--full-screen {
     background: url("../img/icon-video-fullscreen.svg") 50% 50% no-repeat;
     width: 20px;
     transform: translate(78px, 23px);
+
+    @media @tablet {
+      transform: translate(244px, -49px);
+    }
   }
 }
