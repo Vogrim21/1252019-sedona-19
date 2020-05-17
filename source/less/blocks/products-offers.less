@@ -2,6 +2,10 @@
   position: relative;
   padding-top: 28px;
 
+  @media @tablet {
+    padding-top: 55px;
+  }
+
   &::after {
     content: "";
     position: absolute;
@@ -14,13 +18,10 @@
 }
 
 .products-offers__wrapper {
-  @media @tablet {
-    display: flex;
-    flex-direction: column;
-    width: 768px;
-    margin: 0 auto;
-    padding: 27px 0;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
 }
 
 .products-offers__title {
@@ -33,12 +34,19 @@
 
 .products-offers__text {
   font-size: 14px;
-  margin: 0;
-  padding: 18px 8px 35px;
+  margin: 0 auto;
+  padding: 18px 0 35px;
   line-height: 24px;
+  width: 261px;
 
   @media @tablet {
-    padding: 31px 141px 42px;
+    width: 435px;
+    padding: 31px 0 42px;
+    margin: 0;
+  }
+
+  @media @desktop {
+    padding: 32px 360px 46px;
   }
 }
 
@@ -46,8 +54,13 @@
   margin-bottom: 49px;
 
   @media @tablet {
-    width: 458px;
-    align-self: center;
-    margin-bottom: 31px;
+    width: 459px;
+    margin: 0 auto;
+    margin-bottom: 58px;
+  }
+
+  @media @desktop {
+    margin: 0 371px;
+    margin-bottom: 66px;
   }
 }

@@ -1,7 +1,7 @@
 .benefits {
   .list-reset();
   border: 0;
-  padding-bottom: 38px;
+  padding-bottom: 37px;
 
   @media @tablet {
     display: flex;
@@ -33,7 +33,7 @@
 
     @media @tablet {
       background-size: 64px 75px;
-      background-position: 45% 22%;
+      background-position: 48% 22%;
       order: 3;
     }
   }
@@ -49,17 +49,36 @@
 }
 
 .benefits__conteiner {
+  margin: 0 auto;
+
   @media @tablet {
     min-width: 165px;
     min-height: 100px;
     padding: 89px 46px 0;
   }
+
+  @media @desktop {
+    min-width: 308px;
+  }
 }
 
 .benefits__title {
-  margin: 0;
   text-align: left;
-  padding: 33px 0 11px 69px;
+  margin: 0;
+  padding-top: 33px;
+  padding-left: 69px;
+
+  &--housing {
+    padding: 35px 0 13px 69px;
+  }
+
+  &--souvenirs {
+    padding: 29px 0 14px 70px;
+  }
+
+  &--food {
+    padding: 28px 0 14px 69px;
+  }
 
   @media @tablet {
     font-size: 21px;
@@ -81,5 +100,15 @@
     padding: 0;
     transform: translate(-2px, 20px);
     text-align: center;
+  }
+
+  @media @desktop {
+    padding: 0;
+  }
+
+  &--souvenirs {
+    @media @desktop {
+      padding: 0 20px;
+    }
   }
 }
