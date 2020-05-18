@@ -1,7 +1,9 @@
 .welcome {
   position: relative;
   background-image: url("../img/bg-back-mobile.jpg");
+  background-position: bottom;
   padding: 90px 0 77px;
+  text-align: center;
 
   @media @tablet {
     position: relative;
@@ -40,7 +42,7 @@
 
   &--photo {
     padding-top: 52px;
-    padding-bottom: 60px;
+    padding-bottom: 59px;
 
     @media @tablet {
       height: 290px;
@@ -53,3 +55,22 @@
     }
   }
 }
+
+.welcome__emblem {
+  @media @tablet {
+    width: 460px;
+    height: 350px;
+    padding-top: 76px;
+  }
+
+  &--photo {
+    @media @tablet {
+      transform: translateY(-117px);
+    }
+
+    @media @desktop {
+      transform: translateY(-109px);
+    }
+  }
+}
+

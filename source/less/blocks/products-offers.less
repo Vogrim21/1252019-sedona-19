@@ -1,9 +1,9 @@
 .products-offers {
   position: relative;
-  padding-top: 28px;
+  text-align: center;
 
   @media @tablet {
-    padding-top: 55px;
+    padding-top: 28px;
   }
 
   &::after {
@@ -18,10 +18,15 @@
 }
 
 .products-offers__wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0 auto;
+  padding: 28px 20px 49px;
+
+  @media @tablet {
+    padding: 28px 155px 58px;
+  }
+
+  @media @desktop {
+    padding: 28px 371px 66px;
+  }
 }
 
 .products-offers__title {
@@ -33,34 +38,18 @@
 }
 
 .products-offers__text {
+  margin: 0;
   font-size: 14px;
-  margin: 0 auto;
-  padding: 18px 0 35px;
   line-height: 24px;
-  width: 261px;
+  padding-top: 17px;
+  padding-bottom: 35px;
 
   @media @tablet {
-    width: 435px;
-    padding: 31px 0 42px;
-    margin: 0;
+    padding-top: 24px;
+    padding-bottom: 43px;
   }
 
   @media @desktop {
-    padding: 32px 360px 46px;
-  }
-}
-
-.products-offers__hotel {
-  margin-bottom: 49px;
-
-  @media @tablet {
-    width: 459px;
-    margin: 0 auto;
-    margin-bottom: 58px;
-  }
-
-  @media @desktop {
-    margin: 0 371px;
-    margin-bottom: 66px;
+    padding-bottom: 48px;
   }
 }

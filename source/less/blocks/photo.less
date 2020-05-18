@@ -12,13 +12,10 @@
 
 .photo__wrapper {
   @media @tablet {
-    width: 648px;
     padding: 0 60px;
-    margin: 0 auto;
   }
 
   @media @desktop {
-    width: 1200px;
     padding: 0;
   }
 }
@@ -36,31 +33,11 @@
   text-align: left;
   font-size: 14px;
   line-height: 24px;
-  padding-left: 20px;
+  padding: 22px 20px 16px;
   border-bottom: 1px solid #e5e5e5;
-  padding-bottom: 16px;
-  padding-top: 22px;
-
-  &:nth-child(3),
-  &:nth-child(4) {
-    padding-bottom: 17px;
-
-    @media @tablet {
-      padding: 0;
-    }
-  }
-
-  &:not(:first-child) {
-    @media @tablet {
-      width: 324px;
-    }
-
-    @media @desktop {
-      min-width: 400px;
-    }
-  }
 
   @media @tablet {
+    width: 50%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -71,7 +48,14 @@
   }
 
   @media @desktop {
+    width: 100% *1/3;
     background: none;
+  }
+
+  &--spaces {
+    @media @tablet {
+      width: 100%;
+    }
   }
 
   &--road-north {
@@ -82,122 +66,97 @@
 }
 
 .photo__image {
-  img {
-    @media @tablet {
+  display: block;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 100%;
+  min-height: 280px;
+
+  @media @tablet {
+    width: 100%;
+    min-height: 267px;
+
+    img {
       display: none;
     }
   }
 
-  @media @tablet {
-    position: relative;
-    display: block;
-    overflow: hidden;
-    min-width: 648px;
-    min-height: 400px;
-    background-image: url("../img/photo-sunset-tablet@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-  }
+  &--spaces {
+    @media @tablet {
+      background-image: url("../img/photo-sunset-tablet@1x.jpg");
+      min-height: 400px;
+    }
 
-  @media @desktop {
-    position: relative;
-    display: block;
-    overflow: hidden;
-    min-width: 1200px;
-    min-height: 400px;
-    background-image: url("../img/photo-sunset-desktop@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
+    @media @desktop {
+      background-image: url("../img/photo-sunset-desktop@1x.jpg");
+    }
   }
 
   &--native-vegetation {
     @media @tablet {
-      min-width: 324px;
-      min-height: 267px;
       background-image: url("../img/photo-cactus-tablet@1x.jpg");
-      background-repeat: no-repeat;
-      background-position: 50% 50%;
     }
 
     @media @desktop {
-      min-width: 400px;
       background-image: url("../img/photo-cactus-desktop@1x.jpg");
     }
   }
 
   &--road-north {
     @media @tablet {
-      min-width: 324px;
-      min-height: 267px;
       background-image: url("../img/photo-roads-tablet@1x.jpg");
-      background-repeat: no-repeat;
-      background-position: 50% 50%;
     }
 
     @media @desktop {
-      min-width: 400px;
       background-image: url("../img/photo-roads-desktop@1x.jpg");
     }
   }
 
   &--bridge-devil {
     @media @tablet {
-      min-width: 324px;
-      min-height: 267px;
       background-image: url("../img/photo-bridge-tablet@1x.jpg");
-      background-repeat: no-repeat;
-      background-position: 50% 50%;
     }
 
     @media @desktop {
-      min-width: 400px;
       background-image: url("../img/photo-bridge-desktop@1x.jpg");
     }
   }
 }
 
-.photo__wrapper-text {
+.photo__wrapper-sign {
+  padding: 15px 0 0;
+
   @media @tablet {
-    min-width: 175px;
-    padding-bottom: 24px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 20px 16px;
   }
 
   @media @desktop {
-    position: absolute;
+    margin-top: -80px;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: @baseColor;
   }
 }
 
 .photo__subtitle {
   margin: 0;
   font-weight: 700;
-  padding-top: 9px;
-
-  @media @tablet {
-    padding-top: 8px;
-    transform: translate(20px, 8px);
-  }
 }
 
 .photo__author {
   margin: 0;
-  padding-bottom: 8px;
   text-transform: none;
-
-  @media @tablet {
-    padding: 0;
-    transform: translate(19px, 7px);
-  }
 }
 
 .photo__wrapper-like {
-  @media @tablet {
-    min-width: 78px;
-    padding-right: 11px;
-    padding-top: 2px;
-  }
+  padding-top: 9px;
 
-  @media @desktop {
-    position: absolute;
+  @media @tablet {
+    min-width: 66px;
+    padding-top: 13px;
   }
 }
 
@@ -206,11 +165,15 @@
   margin: 0;
   text-decoration: none;
   font-weight: 700;
-  padding-left: 36px;
+  padding-left: 35px;
   color: #000000;
 
   @media @tablet {
-    align-self: flex-end;
+    padding-left: 33px;
+  }
+
+  @media @desktop {
+    color: @baseColor;
   }
 
   &::before {

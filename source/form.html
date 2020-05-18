@@ -7,7 +7,7 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <div class="conteiner">
+    <div class="container">
       <header class="header">
         <nav>
           <div class="header__wrapper">
@@ -27,8 +27,11 @@
             </ul>
           </div>
         </nav>
-        <a class="header__logo">
-          <img class="header__logo-image" src="img/logotype-mobile.svg" width="102" height="83" alt="Логотип Седона">
+        <a class="header__logo-image" href="index.html">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+            <img src="img/logotype-mobile.svg" alt="Логотип Седона">
+          </picture>
         </a>
         <button class="header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       </header>
@@ -45,22 +48,24 @@
             </header>
             <fieldset class="feedback-form__group">
               <legend class="feedback-form__group-name">Представьтесь:</legend>
-              <label">
-                <span class="feedback-form__label">Имя*:</span>
-                <input class="feedback-form__field" name="login" type="text" placeholder="Петр" required>
-              </label>
-              <label">
-                <span class="feedback-form__label feedback-form__label--lastname">Фамилия*:</span>
-                <input class="feedback-form__field feedback-form__field--lastname" name="family" type="text" placeholder="Иванов" required>
-              </label>
-              <label">
-                <span class="feedback-form__label feedback-form__label--patronymic">Отчество:</span>
-                <input class="feedback-form__field feedback-form__field--patronymic" name="lastname" type="text" placeholder="Александрович">
-              </label>
+              <div class="feedback-form__group-wrapper">
+                <label>
+                  <span class="feedback-form__label">Имя*:</span>
+                  <input class="feedback-form__field" name="login" type="text" placeholder="Петр" required>
+                </label>
+                <label>
+                  <span class="feedback-form__label feedback-form__label--lastname">Фамилия*:</span>
+                  <input class="feedback-form__field feedback-form__field--lastname" name="family" type="text" placeholder="Иванов" required>
+                </label>
+                <label>
+                  <span class="feedback-form__label feedback-form__label--patronymic">Отчество:</span>
+                  <input class="feedback-form__field feedback-form__field--patronymic" name="lastname" type="text" placeholder="Александрович">
+                </label>
+              </div>
             </fieldset>
             <fieldset class="feedback-form__group feedback-form__group--fields">
+              <legend class="feedback-form__group-name feedback-form__group-name--contact">Контактная информация:</legend>
               <div class="feedback-form__group-wrapper feedback-form__group-wrapper--fields">
-                <legend class="feedback-form__group-name feedback-form__group-name--contact">Контактная информация:</legend>
                 <label>
                   <span class="feedback-form__label feedback-form__label--image feedback-form__label--image-tel"><span class="feedback-form__hidden-mobile">Контактный</span> телефон*:</span>
                   <input class="feedback-form__field feedback-form__field--contacts" name="tel" type="tel" placeholder="Введите телефон" required>
@@ -72,8 +77,8 @@
               </div>
             </fieldset>
             <fieldset class="feedback-form__group feedback-form__group--fields-radio">
+              <legend class="feedback-form__group-name feedback-form__group-name--radio">Ваше общее впечатление:</legend>
               <div class="feedback-form__group-wrapper feedback-form__group-wrapper--radio">
-                <legend class="feedback-form__group-name feedback-form__group-name--radio">Ваше общее впечатление:</legend>
                 <label>
                   <input class="feedback-form__check visually-hidden" name="impression" type="radio" value="1" checked>
                   <span class="feedback-form__check-label feedback-form__check-label--radio">Скорее положительное</span>
@@ -89,8 +94,8 @@
               </div>
             </fieldset>
             <fieldset class="feedback-form__group feedback-form__group--fields-check">
+              <legend class="feedback-form__group-name feedback-form__group-name--check">Посещенные достопримечательности:</legend>
               <div class="feedback-form__group-wrapper feedback-form__group-wrapper--check">
-                <legend class="feedback-form__group-name feedback-form__group-name--check">Посещенные достопримечательности:</legend>
                 <label>
                   <input  class="feedback-form__check visually-hidden" name="attractions" type="checkbox" value="1" checked>
                   <span class="feedback-form__check-label feedback-form__check-label--box">Мост Дьявола</span>
@@ -110,8 +115,8 @@
               </div>
             </fieldset>
             <fieldset class="feedback-form__group feedback-form__group--comment">
+              <legend class="feedback-form__group-name feedback-form__group-name--comment">Опишите свои эмоции:</legend>
               <div class="feedback-form__group-wrapper feedback-form__group-wrapper--comment">
-                <legend class="feedback-form__group-name feedback-form__group-name--comment">Опишите свои эмоции:</legend>
                 <textarea  class="feedback-form__comment" id="text" name="text" placeholder="Опишите подробно все свои восторги"></textarea>
               </div>
             </fieldset>
@@ -136,12 +141,10 @@
           </ul>
         </div>
         <div class="copyright">
-          <div class="copyright__wrapper">
-            <b class="copyright__text">Разработано</b>
-            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-              <img src="img/logo-htmlacademy.svg" width="27" height="34" alt="HTML Academy">
-            </a>
-          </div>
+          <b class="copyright__text">Разработано</b>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <img src="img/logo-htmlacademy.svg" width="27" height="34" alt="HTML Academy">
+          </a>
         </div>
       </footer>
     </div>
