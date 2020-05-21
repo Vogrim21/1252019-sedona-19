@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html; charset=utf8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Седона</title>
     <link href="css/style.css" rel="stylesheet">
@@ -12,7 +12,7 @@
         <nav>
           <ul class="header__list">
             <li>
-              <a class="header__item header__item--active" href="index.html">Главная</a>
+              <a class="header__item header__item--active header__item--first" href="index.html">Главная</a>
             </li>
             <li>
               <a class="header__item" href="photo.html">Фото и видео</a>
@@ -28,6 +28,7 @@
         <a class="header__logo-image" href="index.html">
           <picture>
             <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
             <img src="img/logotype-mobile.svg" alt="Логотип Седона">
           </picture>
         </a>

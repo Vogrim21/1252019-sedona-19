@@ -1,37 +1,36 @@
 .section-header {
-  padding: 0 33px 31px 32px;
+  padding: 40px 33px 29px 32px;
+  margin: 0 auto;
   text-align: center;
 
   @media @tablet {
-    padding: 10px 140px 50px;
-  }
-
-  @media @desktop {
-    padding: 11px 295px 49px;
+    padding: 50px 20px 50px;
+    max-width: 490px;
+    order: -2;
   }
 
   &--photo {
     padding: 0 24px 22px;
     border-bottom: 1px solid #e5e5e5;
+    max-width: 435px;
 
     @media @tablet {
-      padding: 0;
-      padding-bottom: 22px;
+      padding-bottom: 23px;
+      border: none;
     }
   }
 
   &--form {
-    padding: 0 0 13px;
+    padding: 0 0 33px;
 
     @media @tablet {
-      padding: 41px 0 0;
+      max-width: none;
+      width: 1200px;
+      padding: 75px 0 35px;
     }
 
     @media @desktop {
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-      padding: 77px 0 0;
+      padding: 110px 55px 35px;
     }
   }
 }
@@ -53,7 +52,7 @@
   font-size: 14px;
   line-height: 24px;
   margin: 0;
-  padding-top: 28px;
+  padding-top: 30px;
 
   @media @tablet {
     line-height: 26px;
@@ -79,15 +78,16 @@
   }
 
   &--photo {
-    padding: 25px 0 7px;
+    padding: 27px 0 5px;
     line-height: 24px;
+    margin: 0 auto;
 
     @media @tablet {
-      padding: 25px 161px 47px;
+      padding: 25px 0 46px;
     }
 
     @media @desktop {
-      padding: 23px 380px 48px;
+      padding: 23px 0 48px;
     }
 
     &::after {
@@ -96,13 +96,19 @@
   }
 
   &--form {
+    margin: 0 auto;
+
+    &::after {
+      content: none;
+    }
+
     @media @tablet {
-      padding: 24px 102px 36px;
+      max-width: 440px;
+      padding: 24px 0 36px;
     }
 
     @media @desktop {
-      width: 439px;
-      padding: 29px 0 22px;
+      padding: 25px 0 22px;
     }
   }
 }
