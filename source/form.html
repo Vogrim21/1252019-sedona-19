@@ -12,17 +12,17 @@
         <nav>
           <div class="header__wrapper">
             <ul class="header__list">
-              <li>
-                <a class="header__item" href="index.html">Главная</a>
+              <li class="header__item">
+                <a class="header__link" href="index.html">Главная</a>
               </li>
-              <li>
-                <a class="header__item" href="photo.html">Фото и видео</a>
+              <li class="header__item">
+                <a class="header__link" href="photo.html">Фото и видео</a>
               </li>
-              <li>
-                <a class="header__item header__item--active" href="form.html">Форма отзыва</a>
+              <li class="header__item">
+                <a class="header__link header__link__item--active">Форма отзыва</a>
               </li>
-              <li>
-                <a class="header__item" href="https://htmlacademy.ru">HTML academy</a>
+              <li class="header__item">
+                <a class="header__link" href="https://htmlacademy.ru">HTML academy</a>
               </li>
             </ul>
           </div>
@@ -82,16 +82,16 @@
             <legend class="feedback-form__group-name feedback-form__group-name--radio">Ваше общее впечатление:</legend>
             <div class="feedback-form__field feedback-form__field--radio">
               <div class="check check--radio">
+                <input class="check__input visually-hidden" name="impression" id="impression-1" type="radio" checked>
                 <label class="check__label check__label--radio" for="impression-1">Скорее положительное</label>
-                <input class="check__input visually-hidden" name="impression" id="impression-1" type="radio" value="1" checked>
               </div>
               <div class="check check--radio">
+                <input class="check__input visually-hidden" name="impression" id="impression-2" type="radio">
                 <label class="check__label check__label--radio" for="impression-2">Скорее отрицательное</label>
-                <input class="check__input visually-hidden" name="impression" id="impression-2" type="radio" value="3">
               </div>
               <div class="check check--radio">
+                <input class="check__input visually-hidden" name="impression" id="impression-3" type="radio">
                 <label class="check__label check__label--radio" for="impression-3">Затрудняюсь ответить</label>
-                <input class="check__input visually-hidden" name="impression" id="impression-3" type="radio" value="2">
               </div>
             </div>
           </fieldset>
@@ -99,20 +99,20 @@
             <legend class="feedback-form__group-name feedback-form__group-name--check">Посещенные достопримечательности:</legend>
             <div class="feedback-form__field feedback-form__field--checkbox">
               <div class="check check--box">
+                <input class="check__input visually-hidden" name="attractions" id="attractions-1" type="checkbox" checked>
                 <label class="check__label check__label--box" for="attractions-1">Мост Дьявола</label>
-                <input class="check__input visually-hidden" name="attractions" id="attractions-1" type="checkbox" value="1" checked>
               </div>
               <div class="check check--box">
+                <input class="check__input visually-hidden" name="attractions" id="attractions-2" type="checkbox" checked>
                 <label class="check__label check__label--box" for="attractions-2">Гора-Колокол</label>
-                <input class="check__input visually-hidden" name="attractions" id="attractions-2" type="checkbox" value="2" checked>
               </div>
               <div class="check check--box">
+                <input class="check__input visually-hidden" name="attractions" id="attractions-3" type="checkbox" checked>
                 <label class="check__label check__label--box" for="attractions-3">Слайд-парк</label>
-                <input class="check__input visually-hidden" name="attractions" id="attractions-3" type="checkbox" value="3" checked>
               </div>
               <div class="check check--box">
+                <input class="check__input visually-hidden" name="attractions" id="attractions-4" type="checkbox">
                 <label class="check__label check__label--box" for="attractions-4" for="attractions-4">Красные скалы</label>
-                <input class="check__input visually-hidden" name="attractions" id="attractions-4" type="checkbox" value="4">
               </div>
             </div>
           </fieldset>
