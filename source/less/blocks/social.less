@@ -1,14 +1,12 @@
 .social {
-  text-align: center;
-
   @media @tablet {
     display: flex;
-    width: 578px;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    min-width: 405px;
   }
 
   @media @desktop {
-    width: 824px;
+    min-width: 561px;
   }
 }
 
@@ -19,23 +17,18 @@
   font-weight: 700;
 
   @media @tablet {
-    padding-top: 9px;
-  }
-
-  @media @desktop {
-    padding: 9px 91px 0 32px;
+    margin: 8px auto 0 0;
   }
 }
 
 .social__list {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
   .list-reset();
   margin: 33px 0 0;
 
   @media @tablet {
-    margin: 0;
-    padding-right: 55px;
+    margin: 0 0 auto 0;
   }
 }
 

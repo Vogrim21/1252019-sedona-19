@@ -6,40 +6,16 @@
   position: relative;
 }
 
-.header__wrapper {
-  @media @tablet {
-    display: flex;
-    width: 768px;
-    margin: 0 auto;
-  }
-
-  @media @desktop {
-    width: 1200px;
-    display: flex;
-    margin: 0 auto;
-  }
-}
-
 .header__list {
   .list-reset();
   position: relative;
 
-  li:nth-child(2) {
-    @media @tablet {
-      margin-right: auto;
-    }
-  }
-
   @media @tablet {
     display: flex;
-    justify-content: space-between;
-    width: 768px;
-    margin: 0 auto;
-  }
 
-  @media @desktop {
-    width: 1200px;
-    display: flex;
+    li:nth-child(2) {
+      margin-right: auto;
+    }
   }
 }
 
