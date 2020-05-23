@@ -1,0 +1,260 @@
+.form {
+  padding: 7px 0 43px;
+
+  @media @tablet {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 42px 60px 61px;
+  }
+
+  @media @desktop {
+    padding: 0 120px 73px;
+  }
+}
+
+.form__group {
+  position: relative;
+  border: none;
+  margin: 0;
+  padding: 0;
+
+  @media @tablet {
+    width: 50%;
+  }
+
+  &--impressions {
+    @media @tablet {
+      margin-top: 46px;
+    }
+
+    @media @desktop {
+      margin-top: 43px;
+    }
+  }
+
+  &--alternative-design {
+    width: 100%;
+  }
+
+  &--radio {
+    @media @tablet {
+      position: relative;
+      order: -1;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 6px;
+        right: 0;
+        bottom: 24px;
+        width: 1px;
+        background-color: #dbdbdb;
+      }
+    }
+  }
+}
+
+.form__name-wrapper {
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 18px 20px 22px;
+  font-weight: 700;
+  text-align: center;
+
+  @media @tablet {
+    font-size: 21px;
+    padding: 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #e5e5e5;
+
+    @media @tablet {
+      top: 50%;
+      background-color: #dbdbdb;
+    }
+  }
+
+  &--initials {
+    @media @tablet {
+      text-align: left;
+      padding-left: 58px;
+
+      &::before {
+        content: none;
+      }
+    }
+
+    @media @desktop {
+      padding-left: 79px;
+    }
+  }
+
+  &--check {
+    @media @tablet {
+      box-sizing: border-box;
+      padding: 0 120px;
+    }
+
+    @media @desktop {
+      padding: 0 250px;
+    }
+  }
+
+  &--radio {
+    &::before,
+    &::after {
+      @media @tablet {
+        content: none;
+      }
+    }
+
+    @media @tablet {
+      text-align: center;
+      padding-right: 50px;
+    }
+  }
+
+  &--comment {
+    padding: 19px 20px 0;
+
+    @media @tablet {
+      padding: 0 20px 0;
+    }
+  }
+}
+
+.form__name {
+  @media @tablet {
+    position: relative;
+    z-index: 1;
+    display: block;
+    width: 400px;
+    margin: 0 auto;
+    font-size: 21px;
+    background-color: #ffffff;
+  }
+
+  &--radio,
+  &--initials {
+    @media @tablet {
+      width: auto;
+    }
+  }
+}
+
+.form__fields {
+  padding: 0 20px 5px;
+
+  @media @tablet {
+    padding: 57px 0 2px 60px;
+  }
+
+  @media @desktop {
+    padding-left: 79px;
+  }
+
+  &--wrapper {
+    padding: 0 20px 28px;
+
+    @media @tablet {
+      padding: 26px 0 52px;
+    }
+
+    @media @desktop {
+      display: flex;
+      justify-content: space-between;
+      padding: 75px 0 52px;
+    }
+  }
+
+  &--radio {
+    padding: 2px 20px 14px;
+
+    @media @tablet {
+      padding: 59px 0 1px;
+    }
+
+    @media @desktop {
+      padding: 59px 4px 2px;
+    }
+  }
+
+  &--checkbox {
+    padding: 10px 19px 0;
+
+    @media @tablet {
+      max-width: 520px;
+      padding: 56px 0 22px 63px;
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 auto;
+    }
+
+    @media @desktop {
+      display: flex;
+      justify-content: space-between;
+      max-width: none;
+      padding: 57px 6px 19px 0;
+    }
+  }
+
+  &--comment {
+    padding: 17px 22px 31px 19px;
+
+    @media @tablet {
+      padding: 58px 0 38px;
+    }
+
+    @media @desktop {
+      padding-top: 58px;
+    }
+  }
+}
+
+.form__checkbox {
+  @media @tablet {
+    width: 50%;
+  }
+
+  @media @desktop {
+    width: auto;
+  }
+}
+
+.form__submit {
+  width: 280px;
+  text-transform: uppercase;
+
+  @media @tablet {
+    position: relative;
+    width: 324px;
+    margin-left: 0;
+  }
+
+  @media @desktop {
+    width: 480px;
+  }
+
+  &::before {
+    @media @tablet {
+      content: "* – обязательные поля";
+      position: absolute;
+      font-size: 14px;
+      right: -323px;
+      color: #333333;
+      top: 22px;
+    }
+
+    @media @desktop {
+      right: -478px;
+    }
+  }
+}

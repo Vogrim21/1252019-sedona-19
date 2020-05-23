@@ -1,0 +1,25 @@
+.picture {
+  position: relative;
+  overflow: hidden;
+
+  &--first {
+    order: -1;
+  }
+}
+
+.picture__image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: none;
+  height: auto;
+
+  @media @tablet {
+    width: 100%;
+  }
+
+  &--photo {
+    width: 100%;
+  }
+}

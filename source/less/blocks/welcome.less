@@ -1,15 +1,20 @@
 .welcome {
   position: relative;
   background-image: url("../img/bg-back-mobile.jpg");
+  background-position: bottom;
   padding: 90px 0 77px;
+  text-align: center;
 
   @media @tablet {
-    position: relative;
     background-image: url("../img/bg-back-tablet@1x.jpg");
     background-position: 50% 0%;
     background-repeat: no-repeat;
-    min-height: 518px;
+    height: 518px;
     padding: 0;
+  }
+
+  @media @desktop {
+    background-image: url("../img/bg-back-desktop@1x.jpg");
   }
 
   &::after {
@@ -22,22 +27,45 @@
     background-image: url("../img/bg-intro-triangle-mobile.svg");
     background-position: 50% 0%;
     background-repeat: no-repeat;
+    background-size: 100% 26px;
 
     @media @tablet {
-      content: "";
-      position: absolute;
-      right: 0;
-      bottom: 0;
-      left: 0;
       height: 57px;
-      background-image: url("../img/bg-intro-triangle-tablet.svg");
-      background-position: 50% 0%;
-      background-repeat: no-repeat;
+      background-image: url("../img/bg-intro-triangle-desktop.svg");
+      background-size: cover;
     }
   }
 
   &--photo {
     padding-top: 52px;
-    padding-bottom: 60px;
+    padding-bottom: 59px;
+
+    @media @tablet {
+      height: 290px;
+      background-position: 50% 100%;
+      padding: 0;
+    }
+
+    @media @desktop {
+      height: 301px;
+    }
+  }
+}
+
+.welcome__emblem {
+  @media @tablet {
+    width: 460px;
+    height: 350px;
+    padding-top: 76px;
+  }
+
+  &--photo {
+    @media @tablet {
+      transform: translateY(-117px);
+    }
+
+    @media @desktop {
+      transform: translateY(-109px);
+    }
   }
 }

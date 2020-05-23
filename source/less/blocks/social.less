@@ -1,15 +1,13 @@
-.social__hashtag {
-  text-decoration: none;
-  color: #000000;
-  font-size: 21px;
-  font-weight: 700;
-}
-
-.social__list {
+.social {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   list-style: none;
-  padding: 0;
-  margin: 33px 85px 0 84px;
+  padding-left: 4px;
+
+  @media @tablet {
+    padding: 0;
+  }
 }
 
 .social__link {
@@ -40,6 +38,11 @@
 
   &:active {
     background-color: #5496bd;
+    color: rgba(255, 255, 255, 0.3);
+
+    &::before {
+      opacity: 0.3;
+    }
   }
 
   &--twitter {

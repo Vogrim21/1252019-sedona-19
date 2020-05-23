@@ -1,11 +1,18 @@
 body {
   min-width: 320px;
-  font-family: @baseFont;
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+
   font-size: 18px;
-  text-transform: uppercase;
-  text-align: center;
-  margin: 0 auto 0;
   line-height: 26px;
+  font-family: @baseFont;
+  text-transform: uppercase;
+  background-color: @baseColor;
+
+  @media @desktop {
+    box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
+  }
 }
 
 img {

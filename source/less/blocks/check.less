@@ -1,0 +1,105 @@
+.check {
+  font-size: 14px;
+
+  &--radio {
+    padding-top: 14px;
+    padding-bottom: 28px;
+
+    @media @tablet {
+      padding-bottom: 37px;
+    }
+  }
+
+  &--box {
+    padding-bottom: 53px;
+
+    @media @tablet {
+      padding-bottom: 61px;
+    }
+
+    &:last-child {
+      padding-bottom: 40px;
+    }
+  }
+}
+
+.check__label {
+  position: relative;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: none;
+  text-align: center;
+  padding-left: 77px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 56px;
+    height: 56px;
+    top: -15px;
+    left: 0;
+    border-radius: 50%;
+    background-color: #f2f2f2;
+  }
+
+  &--radio {
+    &::before {
+      position: absolute;
+      width: 22px;
+      height: 22px;
+      top: 2px;
+      left: 17px;
+      background-color: #000000;
+      z-index: 1;
+      border-radius: 50%;
+    }
+  }
+
+  &--box {
+    &::before {
+      content: "";
+      position: absolute;
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      left: 13px;
+      top: 0;
+      width: 30px;
+      height: 26px;
+      z-index: 1;
+    }
+
+    &::after {
+      border-radius: 5px;
+    }
+  }
+}
+
+.check__input:checked + .check__label {
+  &--radio {
+    &::before {
+      content: "";
+    }
+  }
+
+  &--box {
+    &::before {
+      background-image: url("../img/icon-tick.svg");
+    }
+  }
+}
+
+.check__label:hover::after,
+.check__input:focus + .check__label::after {
+  background-color: #e5e5e5;
+}
+
+.check__input:active + .check__label {
+  &::before {
+    opacity: 0.3;
+  }
+
+  &::after {
+    background-color: #d5d5d5;
+  }
+}
