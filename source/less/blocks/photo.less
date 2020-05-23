@@ -37,6 +37,7 @@
   border-bottom: 1px solid #e5e5e5;
 
   @media @tablet {
+    position: relative;
     width: 50%;
     display: flex;
     flex-wrap: wrap;
@@ -132,12 +133,14 @@
   @media @tablet {
     width: 100%;
     display: flex;
+    box-sizing: border-box;
     justify-content: space-between;
     padding: 16px 20px 16px;
   }
 
   @media @desktop {
-    margin-top: -80px;
+    position: absolute;
+    bottom: 0;
     z-index: 1;
     background-color: rgba(0, 0, 0, 0.3);
     color: @baseColor;
