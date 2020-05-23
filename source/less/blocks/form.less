@@ -4,7 +4,7 @@
   @media @tablet {
     display: flex;
     flex-wrap: wrap;
-    padding: 42px 60px 68px;
+    padding: 42px 60px 61px;
   }
 
   @media @desktop {
@@ -49,10 +49,6 @@
         bottom: 24px;
         width: 1px;
         background-color: #dbdbdb;
-
-        @media @desktop {
-          right: -1px;
-        }
       }
     }
   }
@@ -63,6 +59,7 @@
   box-sizing: border-box;
   width: 100%;
   padding: 18px 20px 22px;
+  font-weight: 700;
   text-align: center;
 
   @media @tablet {
@@ -112,16 +109,16 @@
   }
 
   &--radio {
-    @media @tablet {
-      text-align: center;
-      padding-right: 50px;
-    }
-
     &::before,
     &::after {
       @media @tablet {
         content: none;
       }
+    }
+
+    @media @tablet {
+      text-align: center;
+      padding-right: 50px;
     }
   }
 

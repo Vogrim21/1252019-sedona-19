@@ -1,12 +1,12 @@
 .advantages__list {
-  display: flex;
-  flex-wrap: wrap;
   position: relative;
   border-top: 20px solid #81b3d2;
   .list-reset();
   background-color: #eeeeee;
 
   @media @tablet {
+    display: flex;
+    flex-wrap: wrap;
     border: none;
   }
 
@@ -17,7 +17,7 @@
     left: 0;
     width: 100%;
     height: 37px;
-    background-image: url("../img/section-header-bottom.svg");
+    background-image: url("../img/info-group-bottom.svg");
     background-size: 100% 37px;
 
     @media @tablet {
@@ -27,8 +27,6 @@
 }
 
 .advantages__item {
-  width: 100%;
-
   &:last-child {
     border: 0;
   }
@@ -36,6 +34,7 @@
   @media @tablet {
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
   }
 
   &--alternative-design {

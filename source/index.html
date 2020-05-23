@@ -40,11 +40,11 @@
           <img class="welcome__emblem" src="img/welcome.svg" width="281" height="214" alt="Приветствие Седона">
         </div>
         <section class="advantages">
-          <header class="section-header section-header--primary">
+          <div class="info-group info-group--primary">
             <h2 class="visually-hidden">Преимущества города Седона.</h2>
-            <b class="section-header__title section-header__title--primary">СЕДОНА – небольшой городок в АРИЗОНЕ, зАСЛУЖИвающий большего!</b>
-            <p class="section-header__intro section-header__intro--primary">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-          </header>
+            <b class="info-group__title info-group__title--primary">СЕДОНА – небольшой городок в АРИЗОНЕ, зАСЛУЖИвающий большего!</b>
+            <p class="info-group__intro info-group__intro--primary">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+          </div>
           <ol class="advantages__list">
             <li class="advantages__item">
               <div class="advantages__wrapper">
@@ -103,7 +103,11 @@
             <p class="products-offers__text">Укажите предполагаемые даты поездки, и&nbsp;мы&nbsp;покажем&nbsp;вам&nbsp;лучшие предложения гостиниц в седоне</p>
             <a class="btn products-offers__hotel" href="#nowhere">Найти гостиницу</a>
           </div>
-            <img src="img/map-mobile.jpg" width="320" height="350" alt="Карта как к нам проехать">
+          <picture class="picture">
+            <source media="(min-width: 1200px)" srcset="img/map-desktop.jpg, img/map-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/map-tablet.jpg, img/map-tablet@2x.jpg 2x">
+            <img class="picture__img" src="img/map.jpg" srcset="img/map@2x.jpg 2x" alt="Карта Седоны">
+          </picture>
         </div>
       </main>
       <footer class="footer">
