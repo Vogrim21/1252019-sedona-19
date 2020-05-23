@@ -1,6 +1,10 @@
 .picture {
   position: relative;
   overflow: hidden;
+
+  &--first {
+    order: -1;
+  }
 }
 
 .picture__image {
@@ -12,6 +16,10 @@
   height: auto;
 
   @media @tablet {
+    width: 100%;
+  }
+
+  &--photo {
     width: 100%;
   }
 }

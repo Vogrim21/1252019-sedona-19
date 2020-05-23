@@ -1,48 +1,39 @@
 .section-header {
-  padding: 40px 33px 29px 32px;
+  padding: 40px 23px 10px;
   margin: 0 auto;
   text-align: center;
 
   @media @tablet {
-    padding: 50px 20px 51px;
-    max-width: 490px;
-    order: -2;
+    padding: 73px 20px 30px;
+    max-width: 445px;
   }
 
-  &--photo {
-    padding: 0 24px 22px;
-    border-bottom: 1px solid #e5e5e5;
-    max-width: 435px;
-
-    @media @tablet {
-      padding-bottom: 23px;
-      border: none;
-    }
+  @media @desktop {
+    padding: 110px 20px 57px;
   }
 
-  &--form {
-    padding: 0 0 33px;
+  &--primary {
+    padding: 40px 25px 9px;
 
     @media @tablet {
-      max-width: none;
-      width: 1200px;
-      padding: 75px 0 35px;
+      max-width: 490px;
+      padding: 50px 20px;
     }
 
-    @media @desktop {
-      padding: 110px 55px 35px;
+    @media @tablet {
+      padding: 51px 20px 52px;
     }
   }
 }
 
 .section-header__title {
   @media @tablet {
-    font-size: 21px;
+    font-size: 30px;
   }
 
-  &--photo {
+  &--primary {
     @media @tablet {
-      font-size: 30px;
+      font-size: 21px;
     }
   }
 }
@@ -52,7 +43,7 @@
   font-size: 14px;
   line-height: 24px;
   margin: 0;
-  padding-top: 30px;
+  padding-top: 24px;
 
   @media @tablet {
     line-height: 26px;
@@ -60,55 +51,14 @@
   }
 
   @media @desktop {
-    padding-top: 28px;
+    padding-top: 25px;
   }
 
-  &::after {
-    content: "";
-    position: absolute;
-    background: url("../img/section-header-bottom.svg");
-    width: 320px;
-    height: 37px;
-    top: 85px;
-    left: -32px;
+  &--primary {
+    padding-top: 30px;
 
     @media @tablet {
-      content: none;
-    }
-  }
-
-  &--photo {
-    padding: 27px 0 5px;
-    line-height: 24px;
-    margin: 0 auto;
-
-    @media @tablet {
-      padding: 25px 0 46px;
-    }
-
-    @media @desktop {
-      padding: 23px 0 48px;
-    }
-
-    &::after {
-      content: none;
-    }
-  }
-
-  &--form {
-    margin: 0 auto;
-
-    &::after {
-      content: none;
-    }
-
-    @media @tablet {
-      max-width: 440px;
-      padding: 24px 0 36px;
-    }
-
-    @media @desktop {
-      padding: 25px 0 22px;
+      padding-top: 25px;
     }
   }
 }

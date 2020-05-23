@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <meta  name="viewport" content="width=device-width, initial-scale=1">
@@ -10,22 +10,20 @@
     <div class="container">
       <header class="header">
         <nav>
-          <div class="header__wrapper">
-            <ul class="header__list">
-              <li class="header__item">
-                <a class="header__link" href="index.html">Главная</a>
-              </li>
-              <li class="header__item">
-                <a class="header__link header__link--active">Фото и видео</a>
-              </li>
-              <li class="header__item">
-                <a class="header__link" href="form.html">Форма отзыва</a>
-              </li>
-              <li class="header__item">
-                <a class="header__link" href="https://htmlacademy.ru">HTML academy</a>
-              </li>
-            </ul>
-          </div>
+          <ul class="header__list">
+            <li class="header__item">
+              <a class="header__link" href="index.html">Главная</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link header__link--active">Фото и видео</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="form.html">Форма отзыва</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="https://htmlacademy.ru">HTML academy</a>
+            </li>
+          </ul>
         </nav>
         <a class="header__logo-image" href="index.html">
           <picture>
@@ -36,22 +34,22 @@
         </a>
         <button class="header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       </header>
-      <main class="main">
+      <main class="page__main">
         <h1 class="visually-hidden">Фотографии в Седоне!</h1>
         <div class="welcome welcome--photo">
           <img class="welcome__emblem welcome__emblem--photo" src="img/sedona.svg" width="229" height="39" alt="Приветствие Седона">
         </div>
+        <section class="section-header">
+          <b class="section-header__title">Фото и видео</b>
+          <p class="section-header__intro">Не можете решиться на путешествие из-за курса? Фотографии помогут вам&nbsp;забыть о политике и экономике.</p>
+        </section>
         <section class="photo">
           <h2 class="visually-hidden">Фотогалерея</h2>
-          <header class="section-header section-header--photo">
-            <b class="section-header__title section-header__title--photo">Фото и видео</b>
-            <p class="section-header__intro section-header__intro--photo">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
-          </header>
           <div class="photo__wrapper">
             <ul class="photo__list">
               <li class="photo__item photo__item--spaces">
                 <picture class="picture photo__image photo__image--spaces">
-                  <img class="picture__image" src="img/user-1.jpg" width="280" height="280" alt="Неродные просторы">
+                  <img class="picture__image picture__image--photo" src="img/user-1.jpg" width="280" height="280" alt="Неродные просторы">
                 </picture>
                 <div class="photo__wrapper-sign">
                   <div class="photo__wrapper-text">
@@ -65,7 +63,7 @@
               </li>
               <li class="photo__item photo__item--native-vegetation">
                 <picture class="picture photo__image photo__image--native-vegetation">
-                  <img class="picture__image" src="img/user-2.jpg" width="280" height="280" alt="Местная растительность">
+                  <img class="picture__image picture__image--photo" src="img/user-2.jpg" width="280" height="280" alt="Местная растительность">
                 </picture>
                 <div class="photo__wrapper-sign">
                   <div class="photo__wrapper-text">
@@ -79,7 +77,7 @@
               </li>
               <li class="photo__item photo__item--road-north">
                 <picture class="picture photo__image photo__image--road-north">
-                  <img class="picture__image" src="img/user-3.jpg" width="280" height="280" alt="Дорога на север">
+                  <img class="picture__image picture__image--photo" src="img/user-3.jpg" width="280" height="280" alt="Дорога на север">
                 </picture>
                 <div class="photo__wrapper-sign">
                   <div class="photo__wrapper-text">
@@ -93,7 +91,7 @@
               </li>
               <li class="photo__item photo__item--bridge-devil">
                 <picture class="picture photo__image photo__image--bridge-devil">
-                  <img class="picture__image" src="img/user-4.jpg" width="280" height="280" alt="Мост дьявола">
+                  <img class="picture__image picture__image--photo" src="img/user-4.jpg" width="280" height="280" alt="Мост дьявола">
                 </picture>
                 <div class="photo__wrapper-sign">
                   <div class="photo__wrapper-text">

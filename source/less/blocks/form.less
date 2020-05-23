@@ -1,10 +1,10 @@
-.feedback-form {
-  padding: 37px 0 44px;
+.form {
+  padding: 7px 0 43px;
 
   @media @tablet {
     display: flex;
     flex-wrap: wrap;
-    padding: 0 60px 68px;
+    padding: 42px 60px 68px;
   }
 
   @media @desktop {
@@ -12,7 +12,7 @@
   }
 }
 
-.feedback-form__group {
+.form__group {
   position: relative;
   border: none;
   margin: 0;
@@ -25,6 +25,10 @@
   &--impressions {
     @media @tablet {
       margin-top: 46px;
+    }
+
+    @media @desktop {
+      margin-top: 43px;
     }
   }
 
@@ -54,52 +58,45 @@
   }
 }
 
-.feedback-form__group-name {
+.form__name-wrapper {
   position: relative;
-  font-weight: 700;
+  box-sizing: border-box;
   width: 100%;
+  padding: 18px 20px 22px;
   text-align: center;
-  padding: 0;
 
   @media @tablet {
     font-size: 21px;
+    padding: 0;
   }
 
   &::before {
     content: "";
     position: absolute;
-    top: -19px;
+    top: 0;
     left: 0;
-    width: 320px;
+    width: 100%;
     height: 1px;
     background-color: #e5e5e5;
 
     @media @tablet {
+      top: 50%;
       background-color: #dbdbdb;
-      top: 12px;
-      width: 125px;
-    }
-
-    @media @desktop {
-      top: 10px;
-      width: 279px;
     }
   }
 
-  &::after {
+  &--initials {
     @media @tablet {
-      content: "";
-      position: absolute;
-      top: 12px;
-      right: 0;
-      width: 123px;
-      height: 1px;
-      background-color: #dbdbdb;
+      text-align: left;
+      padding-left: 58px;
+
+      &::before {
+        content: none;
+      }
     }
 
     @media @desktop {
-      top: 10px;
-      width: 279px;
+      padding-left: 79px;
     }
   }
 
@@ -110,24 +107,14 @@
     }
 
     @media @desktop {
-      padding: 0 290px;
-    }
-
-    &::before,
-    &::after {
-      @media @tablet {
-        top: 25px;
-      }
+      padding: 0 250px;
     }
   }
 
   &--radio {
     @media @tablet {
-      text-align: left;
-    }
-
-    @media @desktop {
-      padding-left: 80px;
+      text-align: center;
+      padding-right: 50px;
     }
 
     &::before,
@@ -138,29 +125,39 @@
     }
   }
 
-  &--name {
+  &--comment {
+    padding: 19px 20px 0;
+
     @media @tablet {
-      padding-right: 50px;
-    }
-
-    @media @desktop {
-      padding-right: 160px;
-    }
-
-    &::before,
-    &::after {
-      @media @tablet {
-        content: none;
-      }
+      padding: 0 20px 0;
     }
   }
 }
 
-.feedback-form__field {
-  padding: 21px 20px 24px;
+.form__name {
+  @media @tablet {
+    position: relative;
+    z-index: 1;
+    display: block;
+    width: 400px;
+    margin: 0 auto;
+    font-size: 21px;
+    background-color: #ffffff;
+  }
+
+  &--radio,
+  &--initials {
+    @media @tablet {
+      width: auto;
+    }
+  }
+}
+
+.form__field {
+  padding: 0 20px 5px;
 
   @media @tablet {
-    padding: 57px 0 4px 60px;
+    padding: 57px 0 2px 60px;
   }
 
   @media @desktop {
@@ -168,24 +165,24 @@
   }
 
   &--wrapper {
-    padding: 21px 20px 47px;
+    padding: 0 20px 28px;
 
     @media @tablet {
-      padding: 25px 0 53px;
+      padding: 26px 0 52px;
     }
 
     @media @desktop {
       display: flex;
       justify-content: space-between;
-      padding: 72px 0 53px;
+      padding: 75px 0 52px;
     }
   }
 
   &--radio {
-    padding: 23px 20px 33px;
+    padding: 2px 20px 14px;
 
     @media @tablet {
-      padding: 59px 0 2px;
+      padding: 59px 0 1px;
     }
 
     @media @desktop {
@@ -194,7 +191,7 @@
   }
 
   &--checkbox {
-    padding: 31px 20px 6px;
+    padding: 10px 19px 0;
 
     @media @tablet {
       max-width: 520px;
@@ -207,8 +204,8 @@
     @media @desktop {
       display: flex;
       justify-content: space-between;
-      max-width: 954px;
-      padding: 56px 6px 22px 1px;
+      max-width: none;
+      padding: 57px 6px 19px 0;
     }
   }
 
@@ -216,16 +213,16 @@
     padding: 17px 22px 31px 19px;
 
     @media @tablet {
-      padding: 57px 0 38px;
+      padding: 58px 0 38px;
     }
 
     @media @desktop {
-      padding-top: 55px;
+      padding-top: 58px;
     }
   }
 }
 
-.feedback-form__submit {
+.form__submit {
   width: 280px;
   text-transform: uppercase;
 

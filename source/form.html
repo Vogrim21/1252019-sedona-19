@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <meta  name="viewport" content="width=device-width, initial-scale=1">
@@ -10,22 +10,20 @@
     <div class="container">
       <header class="header">
         <nav>
-          <div class="header__wrapper">
-            <ul class="header__list">
-              <li class="header__item">
-                <a class="header__link" href="index.html">Главная</a>
-              </li>
-              <li class="header__item">
-                <a class="header__link" href="photo.html">Фото и видео</a>
-              </li>
-              <li class="header__item">
-                <a class="header__link header__link__item--active">Форма отзыва</a>
-              </li>
-              <li class="header__item">
-                <a class="header__link" href="https://htmlacademy.ru">HTML academy</a>
-              </li>
-            </ul>
-          </div>
+          <ul class="header__list">
+            <li class="header__item">
+              <a class="header__link" href="index.html">Главная</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="photo.html">Фото и видео</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link header__link__item--active">Форма отзыва</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="https://htmlacademy.ru">HTML academy</a>
+            </li>
+          </ul>
         </nav>
         <a class="header__logo-image" href="index.html">
           <picture>
@@ -36,19 +34,21 @@
         </a>
         <button class="header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       </header>
-      <main class="main">
+      <main class="page__main">
         <h1 class="visually-hidden">Форма отзыва</h1>
         <div class="welcome welcome--photo">
           <img class="welcome__emblem welcome__emblem--photo" src="img/sedona.svg" width="229" height="39" alt="Приветствие Седона">
         </div>
-        <form class="feedback-form" action="https://echo.htmlacademy.ru/courses" method="get">
-          <header class="section-header section-header--form">
-            <b class="section-header__title section-header__title--photo">Оставьте свой отзыв</b>
-            <p class="section-header__intro section-header__intro--form">Помогите нашим отелям стать лучше! оставьте отзыв о них, а&nbsp;также о посещенных вами достопримечательностях</p>
-          </header>
-          <fieldset class="feedback-form__group">
-            <legend class="feedback-form__group-name feedback-form__group-name--name">Представьтесь:</legend>
-            <div class="feedback-form__field">
+        <section class="section-header">
+          <b class="section-header__title">Оставьте свой отзыв</b>
+          <p class="section-header__intro">Помогите нашим отелям стать лучше! оставьте отзыв о них, а&nbsp;также о посещенных вами достопримечательностях</p>
+        </section>
+        <form class="form" action="https://echo.htmlacademy.ru/courses" method="get">
+          <fieldset class="form__group">
+            <legend class="form__name-wrapper form__name-wrapper--initials">
+              <span class="form__name form__name--initials">Представьтесь:</span>
+            </legend>
+            <div class="form__field">
               <div class="field__wrapper">
                 <label class="field__label" for="login">Имя*:</label>
                 <input class="field__input" name="login" id="login" type="text" placeholder="Петр" required>
@@ -63,9 +63,11 @@
               </div>
             </div>
           </fieldset>
-          <fieldset class="feedback-form__group feedback-form__group--alternative-design feedback-form__group--impressions">
-            <legend class="feedback-form__group-name">Контактная информация:</legend>
-            <div class="feedback-form__field feedback-form__field--wrapper">
+          <fieldset class="form__group form__group--alternative-design form__group--impressions">
+            <legend class="form__name-wrapper form__name-wrapper--contacts">
+              <span class="form__name form__name--contacts">Контактная информация:</span>
+            </legend>
+            <div class="form__field form__field--wrapper">
               <div class="field__wrapper field__wrapper--contacts field__wrapper--tel">
                 <label class="field__label field__label--image field__label--image-tel" for="tel">
                   <span class="field__hidden-mobile">Контактный</span><span> телефон*:</span>
@@ -78,9 +80,11 @@
               </div>
             </div>
           </fieldset>
-          <fieldset class="feedback-form__group feedback-form__group--radio">
-            <legend class="feedback-form__group-name feedback-form__group-name--radio">Ваше общее впечатление:</legend>
-            <div class="feedback-form__field feedback-form__field--radio">
+          <fieldset class="form__group form__group--radio">
+            <legend class="form__name-wrapper form__name-wrapper--radio">
+              <span class="form__name form__name--radio">Ваше общее впечатление:</span>
+            </legend>
+            <div class="form__field form__field--radio">
               <div class="check check--radio">
                 <input class="check__input visually-hidden" name="impression" id="impression-1" type="radio" checked>
                 <label class="check__label check__label--radio" for="impression-1">Скорее положительное</label>
@@ -95,9 +99,11 @@
               </div>
             </div>
           </fieldset>
-          <fieldset class="feedback-form__group feedback-form__group--alternative-design">
-            <legend class="feedback-form__group-name feedback-form__group-name--check">Посещенные достопримечательности:</legend>
-            <div class="feedback-form__field feedback-form__field--checkbox">
+          <fieldset class="form__group form__group--alternative-design">
+            <legend class="form__name-wrapper form__name-wrapper--check">
+              <span class="form__name form__name--check">Посещенные достопримечательности:</span>
+            </legend>
+            <div class="form__field form__field--checkbox">
               <div class="check check--box">
                 <input class="check__input visually-hidden" name="attractions" id="attractions-1" type="checkbox" checked>
                 <label class="check__label check__label--box" for="attractions-1">Мост Дьявола</label>
@@ -112,20 +118,22 @@
               </div>
               <div class="check check--box">
                 <input class="check__input visually-hidden" name="attractions" id="attractions-4" type="checkbox">
-                <label class="check__label check__label--box" for="attractions-4" for="attractions-4">Красные скалы</label>
+                <label class="check__label check__label--box" for="attractions-4">Красные скалы</label>
               </div>
             </div>
           </fieldset>
-          <fieldset class="feedback-form__group feedback-form__group--alternative-design">
-            <legend class="feedback-form__group-name feedback-form__group-name--comment">Опишите свои эмоции:</legend>
-            <div class="feedback-form__field feedback-form__field--comment">
+          <fieldset class="form__group form__group--alternative-design">
+            <legend class="form__name-wrapper form__name-wrapper--comment">
+              <span class="form__name form__name--comment">Опишите свои эмоции:</span>
+            </legend>
+            <div class="form__field form__field--comment">
               <div class="field__wrapper field__wrapper--comment">
                 <label class="visually-hidden" for="comment">Комментарий</label>
                 <textarea  class="field__input field__input--comment" id="comment" name="text" placeholder="Опишите подробно все свои восторги"></textarea>
               </div>
             </div>
           </fieldset>
-          <button class="feedback-form__submit btn">Отправить отзыв</button>
+          <button class="form__submit btn">Отправить отзыв</button>
         </form>
       </main>
       <footer class="footer">
