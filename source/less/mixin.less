@@ -5,18 +5,10 @@
   list-style: none;
 }
 
-.background-image () {
-  background-image: url("../img/#@(pict).#@(ext)");
+.background-image (@filename, @ext) {
+  background-image: url("../img/@{filename}@1x.@{ext}");
 
   @media @retina {
-    background-image: url("../img/&@pict@2x.&@ext");
-  }
-
-  @media @webp {
-    background-image: url("../img/&@pict.webp");
-  }
-
-  @media @retina-webp {
-    background-image: url("../img/&@pict@2x.webp");
+    background-image: url("../img/@{filename}@2x.@{ext}");
   }
 }
