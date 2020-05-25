@@ -38,5 +38,9 @@ form.addEventListener("submit", function (evt) {
 close.addEventListener("click", function (evt) {
   evt.preventDefault();
   popuperror.classList.remove("modal--on");
+});
+
+close.addEventListener("click", function (evt) {
+  evt.preventDefault();
   popup.classList.remove("modal--on");
 });
