@@ -9,7 +9,8 @@
   <body>
     <div class="container">
       <header class="header">
-        <nav>
+        <nav class="header__nav  header__nav--close header__nav--nojs">
+          <button class="header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
           <ul class="header__list">
             <li class="header__item">
               <a class="header__link" href="index.html">Главная</a>
@@ -17,7 +18,7 @@
             <li class="header__item">
               <a class="header__link" href="photo.html">Фото и видео</a>
             </li>
-            <li class="header__item">
+            <li class="header__item header__item--active">
               <a class="header__link header__link--active">Форма отзыва</a>
             </li>
             <li class="header__item">
@@ -32,7 +33,6 @@
             <img src="img/logotype-mobile.svg" alt="Логотип Седона">
           </picture>
         </a>
-        <button class="header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       </header>
       <main class="page__main">
         <h1 class="visually-hidden">Форма отзыва</h1>
@@ -72,11 +72,11 @@
                 <label class="field__label field__label--image field__label--image-tel" for="tel">
                   <span class="field__hidden-mobile">Контактный</span><span> телефон*:</span>
                 </label>
-                <input class="field__input field__input--contacts" name="tel" id="tel" type="tel" placeholder="Введите телефон" required>
+                <input class="field__input field__input--contacts" name="tel" id="tel" type="number" placeholder="Введите телефон" required>
               </div>
               <div class="field__wrapper field__wrapper--contacts field__wrapper--mail">
                 <label class="field__label field__label--image field__label--image-mail" for="mail">Электронная почта*:</label>
-                <input class="field__input field__input--contacts" name="mail" id="mail" type="text" placeholder="Введите e-mail" required>
+                <input class="field__input field__input--contacts" name="mail" id="mail" type="email" placeholder="Введите e-mail" required>
               </div>
             </div>
           </fieldset>
@@ -133,8 +133,22 @@
               </div>
             </div>
           </fieldset>
-          <button class="form__submit btn">Отправить отзыв</button>
+          <button class="form__submit btn" type="submit">Отправить отзыв</button>
         </form>
+        <div class="modal modal--success">
+          <div class="modal__info modal__info--success">
+            <b class="modal__heading">Ваш отзыв отправлен!</b>
+            <p class="modal__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+          </div>
+          <button class="btn modal__btn modal__btn--success" type="submit">Закрыть окно</button>
+        </div>
+        <div class="modal modal--error">
+          <div class="modal__info">
+            <b class="modal__heading">Что-то пошло не так!</b>
+            <p class="modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+          </div>
+          <button class="btn modal__btn" type="button">Ok</button>
+        </div>
       </main>
       <footer class="footer">
         <a class="footer__hashtag" href="#nowhere">#visitsedona</a>
@@ -157,5 +171,6 @@
         </div>
       </footer>
     </div>
+    <script src="js/modal.js"></script>
   </body>
 </html>

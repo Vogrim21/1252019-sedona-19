@@ -4,3 +4,11 @@
 
   list-style: none;
 }
+
+.background-image (@filename, @ext) {
+  background-image: url("../img/@{filename}@1x.@{ext}");
+
+  @media @retina {
+    background-image: url("../img/@{filename}@2x.@{ext}");
+  }
+}

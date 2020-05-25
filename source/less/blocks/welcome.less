@@ -1,12 +1,14 @@
 .welcome {
+  .background-image("bg-back-mobile", "jpg");
   position: relative;
-  background-image: url("../img/bg-back-mobile.jpg");
+  width: 100%;
+  background-size: cover;
   background-position: bottom;
   padding: 90px 0 77px;
   text-align: center;
 
   @media @tablet {
-    background-image: url("../img/bg-back-tablet@1x.jpg");
+    .background-image("bg-back-tablet", "jpg");
     background-position: 50% 0%;
     background-repeat: no-repeat;
     height: 518px;
@@ -14,7 +16,7 @@
   }
 
   @media @desktop {
-    background-image: url("../img/bg-back-desktop@1x.jpg");
+    .background-image("bg-back-desktop", "jpg");
   }
 
   &::after {
