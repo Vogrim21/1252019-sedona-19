@@ -4,3 +4,19 @@
 
   list-style: none;
 }
+
+.background-image () {
+  background-image: url("../img/#@(pict).#@(ext)");
+
+  @media @retina {
+    background-image: url("../img/&@pict@2x.&@ext");
+  }
+
+  @media @webp {
+    background-image: url("../img/&@pict.webp");
+  }
+
+  @media @retina-webp {
+    background-image: url("../img/&@pict@2x.webp");
+  }
+}

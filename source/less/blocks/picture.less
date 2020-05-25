@@ -2,8 +2,14 @@
   position: relative;
   overflow: hidden;
 
-  &--first {
-    order: -1;
+  &--first-order {
+    @media @tablet {
+      order: -1;
+    }
+  }
+
+  &--photo {
+    min-height: 400px;
   }
 }
 
@@ -16,10 +22,6 @@
   height: auto;
 
   @media @tablet {
-    width: 100%;
-  }
-
-  &--photo {
     width: 100%;
   }
 }
