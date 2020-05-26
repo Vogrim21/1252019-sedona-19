@@ -1,7 +1,8 @@
 var form = document.querySelector(".form");
 var popup = document.querySelector(".modal--success");
 var popuperror = document.querySelector(".modal--error");
-var close = document.querySelector(".modal__btn");
+var successСlose = document.querySelector(".modal__btn--success");
+var errorСlose = document.querySelector(".modal__btn--error");
 var submitBtn = form.querySelector("[type=submit]");
 var login = form.querySelector("[name=login]");
 var family = form.querySelector("[name=family]");
@@ -33,16 +34,23 @@ evt.preventDefault();
   popup.classList.remove("modal--on");
   popuperror.classList.remove("modal--on");
   popuperror.offsetWidth = popup.offsetWidth;
-  popuperror.classList.add("modal--on");
-  popup.classList.add("modal--on");
+
+  //TODO: запрос к серверу, ключ ответа 0/1 вывсести в переменную res
+  var res = Math.round(Math.random());
+  if (res) {
+    popup.classList.add("modal--on")
+  } else {
+    popuperror.classList.add("modal--on")
+  }
 });
 
-close.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  popuperror.classList.remove("modal--on");
-});
+  errorСlose.addEventListener("click", function (evt){
+    evt.preventDefault();
+    popuperror.classList.remove("modal--on");
+  });
 
-close.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  popup.classList.remove("modal--on");
-});
+  successСlose.addEventListener("click", function (evt){
+    evt.preventDefault();
+    popup.classList.remove("modal--on");
+  });
+
