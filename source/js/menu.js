@@ -1,6 +1,7 @@
 var navMain = document.querySelector('.header__nav');
 var navToggle = document.querySelector('.header__toggle');
 
+navMain.classList.add('header__nav--close');
 navMain.classList.remove('header__nav--nojs');
 
 navToggle.addEventListener('click', function() {
