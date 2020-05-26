@@ -19,20 +19,22 @@ try {
 form.addEventListener("submit", function (evt) {
   if (!login.value || !family.value || !email.value || !tel.value) {
     return
-}  {
+}
+
+evt.preventDefault();
+
   if (isStorageSupport) {
-    evt.preventDefault();
-    popup.classList.remove("modal--on");
-    popuperror.classList.remove("modal--on");
-    popuperror.offsetWidth = popup.offsetWidth;
-    popuperror.classList.add("modal--on");
-    popup.classList.add("modal--on");
     localStorage.setItem("login", login.value);
     localStorage.setItem("family", family.value);
     localStorage.setItem("email", email.value);
     localStorage.setItem("tel", tel.value);
-    }
   }
+
+  popup.classList.remove("modal--on");
+  popuperror.classList.remove("modal--on");
+  popuperror.offsetWidth = popup.offsetWidth;
+  popuperror.classList.add("modal--on");
+  popup.classList.add("modal--on");
 });
 
 close.addEventListener("click", function (evt) {
