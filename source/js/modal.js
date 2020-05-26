@@ -53,4 +53,3 @@ evt.preventDefault();
     evt.preventDefault();
     popup.classList.remove("modal--on");
   });
-
