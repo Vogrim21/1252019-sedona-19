@@ -2,15 +2,14 @@
   .background-image("bg-back-mobile", "jpg");
   position: relative;
   width: 100%;
-  background-size: cover;
-  background-position: bottom;
+  background-position: 50% 100%;
+  background-size: 768px auto;
   padding: 90px 0 77px;
   text-align: center;
 
   @media @tablet {
     .background-image("bg-back-tablet", "jpg");
-    background-position: 50% 0%;
-    background-repeat: no-repeat;
+    background-size: cover;
     height: 518px;
     padding: 0;
   }
@@ -55,20 +54,18 @@
 }
 
 .welcome__emblem {
-  width: 460px;
-
   @media @tablet {
-    height: 350px;
+    width: 460px;
     padding-top: 76px;
   }
 
   &--photo {
     @media @tablet {
-      transform: translateY(-117px);
+      padding-top: 94px;
     }
 
     @media @desktop {
-      transform: translateY(-109px);
+      padding-top: 101px;
     }
   }
 }

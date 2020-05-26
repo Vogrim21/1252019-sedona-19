@@ -16,15 +16,15 @@
   }
 
   &--close {
+    .header__toggle {
+      top: 15px;
+      background-image: url("../img/icon-menu.svg");
+    }
+
     @media @mobile-only {
       .header__item {
         display: none;
       }
-    }
-
-    .header__toggle {
-      top: 72px;
-      background-image: url("../img/icon-menu.svg");
     }
   }
 
@@ -34,7 +34,7 @@
         content: "";
         position: absolute;
         right: 1px;
-        top: -222px;
+        top: 49px;
         width: 23px;
         height: 22px;
         background: url("../img/icon-cross.svg") 50% 50% no-repeat;
@@ -154,15 +154,15 @@
   cursor: pointer;
   width: 24px;
   height: 22px;
-  right: 20px;
-  top: 239px;
+  right: 19px;
+  top: -32px;
   background-color: @baseColor;
 
   &::before {
     content: "";
     position: absolute;
     right: 1px;
-    top: -222px;
+    top: -50px;
     width: 23px;
     height: 22px;
     background: url("../img/icon-cross.svg") 50% 50% no-repeat;

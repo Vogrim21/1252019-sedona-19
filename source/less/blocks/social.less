@@ -15,21 +15,14 @@
   position: relative;
   width: 46px;
   height: 48px;
+  text-align: center;
+  padding-top: 13px;
+  box-sizing: border-box;
+  color: @baseColor;
   background-color: @secondaryBackgroundColor;
   background-position: center;
   background-repeat: no-repeat;
   margin-right: 6px;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
 
   &:hover,
   &:focus {
@@ -42,26 +35,6 @@
 
     &::before {
       opacity: 0.3;
-    }
-  }
-
-  &--twitter {
-    &::before {
-      background-image: url("../img/icon-twitter.svg");
-    }
-  }
-
-  &--facebook {
-    width: 47px;
-
-    &::before {
-      background-image: url("../img/icon-facebook.svg");
-    }
-  }
-
-  &--youtube {
-    &::before {
-      background-image: url("../img/icon-youtube.svg");
     }
   }
 }
