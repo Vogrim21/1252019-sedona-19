@@ -11,9 +11,9 @@ var isStorageSupport = true;
 var storage = "";
 
 try {
-  var storage = localStorage.getItem("login");
+  storage = localStorage.getItem("login");
 } catch (error) {
-  var isStorageSupport = false;
+  isStorageSupport = false;
 }
 
 form.addEventListener("submit", function (evt) {
