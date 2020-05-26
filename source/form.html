@@ -19,7 +19,7 @@
               <a class="header__link" href="photo.html">Фото и видео</a>
             </li>
             <li class="header__item header__item--active">
-              <a class="header__link header__link--active">Форма отзыва</a>
+              <a class="header__link header__link--active" href="form.html">Форма отзыва</a>
             </li>
             <li class="header__item">
               <a class="header__link" href="https://htmlacademy.ru">HTML academy</a>
@@ -72,7 +72,7 @@
                 <label class="field__label field__label--image field__label--image-tel" for="tel">
                   <span class="field__hidden-mobile">Контактный</span><span> телефон*:</span>
                 </label>
-                <input class="field__input field__input--contacts" name="tel" id="tel" type="number" placeholder="Введите телефон" required>
+                <input class="field__input field__input--contacts" name="tel" id="tel" type="tel" placeholder="Введите телефон" required>
               </div>
               <div class="field__wrapper field__wrapper--contacts field__wrapper--mail">
                 <label class="field__label field__label--image field__label--image-mail" for="mail">Электронная почта*:</label>
@@ -147,7 +147,7 @@
             <b class="modal__heading">Что-то пошло не так!</b>
             <p class="modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
           </div>
-          <button class="btn modal__btn" type="button">Ok</button>
+          <button class="btn modal__btn modal__btn--error" type="button">Ok</button>
         </div>
       </main>
       <footer class="footer">
@@ -172,5 +172,6 @@
       </footer>
     </div>
     <script src="js/modal.js"></script>
+    <script src="js/menu.js"></script>
   </body>
 </html>
