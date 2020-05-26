@@ -15,9 +15,6 @@
   position: relative;
   width: 46px;
   height: 48px;
-  text-align: center;
-  padding-top: 13px;
-  box-sizing: border-box;
   color: @baseColor;
   background-color: @secondaryBackgroundColor;
   background-position: center;
@@ -36,5 +33,16 @@
     &::before {
       opacity: 0.3;
     }
+  }
+}
+
+.social__svg {
+  position: absolute;
+  top: 17px;
+  left: 14px;
+
+  &--facebook {
+    left: 19px;
+    top: 14px;
   }
 }

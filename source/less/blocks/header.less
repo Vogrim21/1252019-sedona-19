@@ -16,15 +16,16 @@
   }
 
   &--close {
+    .header__item {
+      @media @mobile-only {
+        display: none;
+      }
+    }
+
+
     .header__toggle {
       top: 15px;
       background-image: url("../img/icon-menu.svg");
-    }
-
-    @media @mobile-only {
-      .header__item {
-        display: none;
-      }
     }
   }
 
