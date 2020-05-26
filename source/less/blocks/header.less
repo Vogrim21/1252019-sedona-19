@@ -31,15 +31,18 @@
 
   &--open {
     .header__toggle {
+      right: 19px;
+      top: 17px;
+      z-index: 1;
+
       &::before {
         content: "";
         position: absolute;
-        right: 1px;
-        top: 49px;
+        right: 0;
+        top: 0;
         width: 23px;
         height: 22px;
         background: url("../img/icon-cross.svg") 50% 50% no-repeat;
-        z-index: 1;
       }
     }
   }
@@ -157,7 +160,7 @@
   height: 22px;
   right: 19px;
   top: -32px;
-  background-color: @baseColor;
+  background-color: transparent;
 
   &::before {
     content: "";
