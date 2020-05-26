@@ -128,7 +128,7 @@
   text-decoration: none;
   font-weight: 700;
   padding-left: 35px;
-  color: #000000;
+  color: inherit;
 
   @media @tablet {
     padding-left: 33px;
@@ -138,13 +138,14 @@
     color: @baseColor;
   }
 
-  &::before {
-    content: "";
+  svg {
     position: absolute;
-    background: url("../img/icon-like.svg") 50% 50% no-repeat;
-    width: 23px;
-    height: 23px;
     left: 0;
-    top: -7px;
+    top: -4px;
+    opacity: 0.3;
+
+    @media @desktop {
+      opacity: 1;
+    }
   }
 }

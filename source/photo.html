@@ -5,6 +5,8 @@
     <meta  name="viewport" content="width=device-width, initial-scale=1">
     <title>Седона</title>
     <link href="css/style.min.css" rel="stylesheet">
+    <link rel="preload" href="fonts/ptsans.woff2" as="font">
+    <link rel="preload" href="fonts/ptsansbold.woff2" as="font">
   </head>
   <body>
     <div class="container">
@@ -62,7 +64,11 @@
                     <p class="photo__author">Автор фото: Борис</p>
                   </div>
                   <div class="photo__wrapper-like">
-                    <a class="photo__like" href="#nowhere">1350</a>
+                    <a class="photo__like" href="#nowhere">1350
+                      <svg width="22" height="20">
+                        <use xlink:href="img/symbol.svg#icon-like"></use>
+                      </svg>
+                    </a>
                   </div>
                 </div>
               </li>
@@ -81,7 +87,11 @@
                     <p class="photo__author">Автор фото: Сергей</p>
                   </div>
                   <div class="photo__wrapper-like">
-                    <a class="photo__like" href="#nowhere">143</a>
+                    <a class="photo__like" href="#nowhere">143
+                      <svg width="22" height="20">
+                        <use xlink:href="img/symbol.svg#icon-like"></use>
+                      </svg>
+                    </a>
                   </div>
                 </div>
               </li>
@@ -100,7 +110,11 @@
                     <p class="photo__author">Автор фото: Петр</p>
                   </div>
                   <div class="photo__wrapper-like">
-                    <a class="photo__like" href="#nowhere">96</a>
+                    <a class="photo__like" href="#nowhere">96
+                      <svg width="22" height="20">
+                        <use xlink:href="img/symbol.svg#icon-like"></use>
+                      </svg>
+                    </a>
                   </div>
                 </div>
               </li>
@@ -119,7 +133,11 @@
                     <p class="photo__author">Автор фото: Антон</p>
                   </div>
                   <div class="photo__wrapper-like">
-                    <a class="photo__like" href="#nowhere">254</a>
+                    <a class="photo__like" href="#nowhere">254
+                      <svg width="22" height="20">
+                        <use xlink:href="img/symbol.svg#icon-like"></use>
+                      </svg>
+                    </a>
                   </div>
                 </div>
               </li>
@@ -128,19 +146,36 @@
         </section>
         <div class="video">
           <div class="video__wrapper">
-          <b class="video__title">Все еще сомневаетесь?</b>
-          <p class="video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-            <div class="video__src-wrapper">
-              <video class="video__src" src="#" alt="Видео презентация"></video>
-            </div>
-            <div class="video__contoller">
-              <div class="video__range">
-                <button class="video__toggle"><span class="visually-hidden">Перемотка видео</span></button>
+            <b class="video__title">Все еще сомневаетесь?</b>
+            <p class="video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+            <div class="video__player">
+              <div class="video__src-wrapper">
+                <video class="video__src" src="#" alt="Видео презентация"></video>
               </div>
-              <div class="video__container">
-                <button class="video__link video__link--refresh"><span class="visually-hidden">Обновить экран</span></button>
-                <button class="video__link video__link--subtitles"><span class="visually-hidden">Субтитры</span></button>
-                <button class="video__link video__link--full-screen"><span class="visually-hidden">На весь экран</span></button>
+              <div class="video__contoller">
+                <div class="video__range">
+                  <button class="video__toggle"><span class="visually-hidden">Перемотка видео</span></button>
+                </div>
+                <div class="video__container">
+                  <button class="video__link video__link--refresh">
+                    <svg width="22" height="20">
+                      <use xlink:href="img/symbol.svg#video-replay"></use>
+                    </svg>
+                    <span class="visually-hidden">Обновить экран</span>
+                  </button>
+                  <button class="video__link video__link--subtitles">
+                    <svg width="32" height="20">
+                      <use xlink:href="img/symbol.svg#video-subtitles"></use>
+                    </svg>
+                    <span class="visually-hidden">Субтитры</span>
+                  </button>
+                  <button class="video__link video__link--full-screen">
+                    <svg width="20" height="20">
+                      <use xlink:href="img/symbol.svg#video-fullscreen"></use>
+                    </svg>
+                    <span class="visually-hidden">На весь экран</span>
+                  </button>
+                </div>
               </div>
             </div>
           </div>
@@ -150,7 +185,7 @@
         <a class="footer__hashtag" href="#nowhere">#visitsedona</a>
         <ul class="social footer__social">
           <li>
-            <a class="social__link social__link--twitter" href="#nowhere">
+            <a class="social__link" href="#nowhere">
               <svg class="social__svg" width="18" height="14">
                 <use xlink:href="img/symbol.svg#twitter"></use>
               </svg>
@@ -158,7 +193,7 @@
             </a>
           </li>
           <li>
-            <a class="social__link social__link--facebook" href="#nowhere">
+            <a class="social__link" href="#nowhere">
               <svg class="social__svg social__svg--facebook" width="9" height="18">
                 <use xlink:href="img/symbol.svg#facebook"></use>
               </svg>
@@ -166,7 +201,7 @@
             </a>
           </li>
           <li>
-            <a class="social__link social__link--youtube" href="#nowhere">
+            <a class="social__link" href="#nowhere">
               <svg class="social__svg" width="20" height="14">
                 <use xlink:href="img/symbol.svg#youtube"></use>
               </svg>
@@ -184,6 +219,6 @@
         </div>
       </footer>
     </div>
-    <script src="js/menu.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>

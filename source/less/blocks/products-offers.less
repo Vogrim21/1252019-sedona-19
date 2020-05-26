@@ -5,25 +5,6 @@
   @media @tablet {
     padding-top: 28px;
   }
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: 70%;
-    left: 46%;
-    width: 27px;
-    height: 27px;
-    background-image: url("../img/icon-map-marker.svg");
-
-    @media @tablet {
-      top: 72%;
-      left: 48%;
-    }
-
-    @media @desktop {
-      left: 49%;
-    }
-  }
 }
 
 .products-offers__wrapper {
@@ -70,6 +51,7 @@
 }
 
 .products-offers__map {
+  width: auto;
   display: block;
   min-height: 350px;
 }
