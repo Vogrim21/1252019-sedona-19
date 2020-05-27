@@ -226,6 +226,27 @@
   @media @desktop {
     width: auto;
   }
+
+  @media @desktop {
+    margin-right: 29px;
+
+    &:nth-child(4n+1) {
+      min-width: 230px;
+    }
+
+    &:nth-child(4n+2) {
+      min-width: 229px;
+    }
+
+    &:nth-child(4n+3) {
+      min-width: 209px;
+    }
+
+    &:nth-child(4n) {
+      min-width: 195px;
+      margin-right: 0;
+    }
+  }
 }
 
 .form__submit {
