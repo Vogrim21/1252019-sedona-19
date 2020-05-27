@@ -46,12 +46,29 @@
   }
 }
 
-.products-offers__image {
-  position: relative;
+.products-offers__map {
+  min-height: 350px;
 }
 
-.products-offers__map {
+.products-offers__map-poster {
   width: auto;
   display: block;
   min-height: 350px;
+
+  &--hidden {
+    display: none;
+  }
+}
+
+.products-offers__map-image {
+  width: auto;
+  min-height: 350px;
+}
+
+.products-offers__placemark {
+  background-color: @secondaryBackgroundColor;
+  border: 5px solid #ffffff;
+  border-radius: 50%;
+  width: 17px;
+  height: 17px;
 }
