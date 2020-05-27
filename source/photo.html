@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html lang="ru">
   <head>
     <meta charset="utf-8">
     <meta  name="viewport" content="width=device-width, initial-scale=1">
@@ -8,7 +8,7 @@
     <link rel="preload" href="fonts/ptsans.woff2" as="font">
     <link rel="preload" href="fonts/ptsansbold.woff2" as="font">
   </head>
-  <body>
+  <body class="page">
     <div class="container">
       <header class="header">
         <nav class="header__nav header__nav--nojs">
@@ -50,14 +50,16 @@
           <div class="photo__wrapper">
             <ul class="photo__list">
               <li class="photo__item photo__item--spaces">
-                <picture class="picture photo__image photo__image--spaces">
-                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.webp, img/photo-sunset-desktop@2x.webp 2x">
-                  <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg, img/photo-sunset-desktop@2x.jpg 2x">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.webp, img/photo-sunset-tablet@2x.webp 2x">
-                  <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg, img/photo-sunset-tablet@2x.jpg 2x">
-                  <source type="image/webp" srcset="img/photo-sunset-mobile@1x.webp, img/photo-sunset-mobile@1x.webp 2x">
-                  <img class="picture__image" src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x" alt="Неродные просторы">
-                </picture>
+                <a href="#">
+                  <picture class="picture photo__image photo__image--spaces">
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.webp, img/photo-sunset-desktop@2x.webp 2x">
+                    <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg, img/photo-sunset-desktop@2x.jpg 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.webp, img/photo-sunset-tablet@2x.webp 2x">
+                    <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg, img/photo-sunset-tablet@2x.jpg 2x">
+                    <source type="image/webp" srcset="img/photo-sunset-mobile@1x.webp, img/photo-sunset-mobile@1x.webp 2x">
+                    <img class="picture__image" src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x" alt="Неродные просторы">
+                  </picture>
+                </a>
                 <div class="photo__wrapper-sign">
                   <div class="photo__wrapper-text">
                     <p class="photo__subtitle">Неродные просторы</p>
@@ -73,14 +75,16 @@
                 </div>
               </li>
               <li class="photo__item photo__item--native-vegetation">
-                <picture class="picture photo__image">
-                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.webp, img/photo-cactus-desktop@2x.webp 2x">
-                  <source media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.jpg, img/photo-cactus-desktop@2x.jpg 2x">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.webp, img/photo-cactus-tablet@2x.webp 2x">
-                  <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.jpg, img/photo-cactus-tablet@2x.jpg 2x">
-                  <source type="image/webp" srcset="img/photo-cactus-mobile@1x.webp, img/photo-cactus-mobile@1x.webp 2x">
-                  <img class="picture__image" src="img/photo-cactus-mobile@1x.jpg" srcset="img/photo-cactus-mobile@2x.jpg 2x" alt="Местная растительность">
-                </picture>
+                <a href="#">
+                  <picture class="picture photo__image">
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.webp, img/photo-cactus-desktop@2x.webp 2x">
+                    <source media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.jpg, img/photo-cactus-desktop@2x.jpg 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.webp, img/photo-cactus-tablet@2x.webp 2x">
+                    <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.jpg, img/photo-cactus-tablet@2x.jpg 2x">
+                    <source type="image/webp" srcset="img/photo-cactus-mobile@1x.webp, img/photo-cactus-mobile@1x.webp 2x">
+                    <img class="picture__image" src="img/photo-cactus-mobile@1x.jpg" srcset="img/photo-cactus-mobile@2x.jpg 2x" alt="Местная растительность">
+                  </picture>
+                </a>
                 <div class="photo__wrapper-sign">
                   <div class="photo__wrapper-text">
                     <p class="photo__subtitle">Местная растительность</p>
@@ -96,14 +100,16 @@
                 </div>
               </li>
               <li class="photo__item photo__item--road-north">
-                <picture class="picture photo__image">
-                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.webp, img/photo-roads-desktop@2x.webp 2x">
-                  <source media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.jpg, img/photo-roads-desktop@2x.jpg 2x">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.webp, img/photo-roads-tablet@2x.webp 2x">
-                  <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg, img/photo-roads-tablet@2x.jpg 2x">
-                  <source type="image/webp" srcset="img/photo-roads-mobile@1x.webp, img/photo-roads-mobile@1x.webp 2x">
-                  <img class="picture__image" src="img/photo-roads-mobile@1x.jpg" srcset="img/photo-roads-mobile@2x.jpg 2x" alt="Дорога на север">
-                </picture>
+                <a href="#">
+                  <picture class="picture photo__image">
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.webp, img/photo-roads-desktop@2x.webp 2x">
+                    <source media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.jpg, img/photo-roads-desktop@2x.jpg 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.webp, img/photo-roads-tablet@2x.webp 2x">
+                    <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg, img/photo-roads-tablet@2x.jpg 2x">
+                    <source type="image/webp" srcset="img/photo-roads-mobile@1x.webp, img/photo-roads-mobile@1x.webp 2x">
+                    <img class="picture__image" src="img/photo-roads-mobile@1x.jpg" srcset="img/photo-roads-mobile@2x.jpg 2x" alt="Дорога на север">
+                  </picture>
+                </a>
                 <div class="photo__wrapper-sign photo__wrapper-sign--road-north">
                   <div class="photo__wrapper-text">
                     <p class="photo__subtitle">Дорога на север</p>
@@ -119,14 +125,16 @@
                 </div>
               </li>
               <li class="photo__item photo__item--bridge-devil">
-                <picture class="picture photo__image">
-                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/bridge-desktop@1x.webp, img/bridge-desktop@2x.webp 2x">
-                  <source media="(min-width: 1200px)" srcset="img/bridge-desktop@1x.jpg, img/bridge-desktop@2x.jpg 2x">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/bridge-tablet@1x.webp, img/bridge-tablet@2x.webp 2x">
-                  <source media="(min-width: 768px)" srcset="img/bridge-tablet@1x.jpg, img/bridge-tablet@2x.jpg 2x">
-                  <source type="image/webp" srcset="img/bridge-mobile@1x.webp, img/bridge-mobile@1x.webp 2x">
-                  <img class="picture__image" src="img/bridge-mobile@1x.jpg" srcset="img/bridge-mobile@2x.jpg 2x" alt="Мост дьявола">
-                </picture>
+                <a href="#">
+                  <picture class="picture photo__image">
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/bridge-desktop@1x.webp, img/bridge-desktop@2x.webp 2x">
+                    <source media="(min-width: 1200px)" srcset="img/bridge-desktop@1x.jpg, img/bridge-desktop@2x.jpg 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/bridge-tablet@1x.webp, img/bridge-tablet@2x.webp 2x">
+                    <source media="(min-width: 768px)" srcset="img/bridge-tablet@1x.jpg, img/bridge-tablet@2x.jpg 2x">
+                    <source type="image/webp" srcset="img/bridge-mobile@1x.webp, img/bridge-mobile@1x.webp 2x">
+                    <img class="picture__image" src="img/bridge-mobile@1x.jpg" srcset="img/bridge-mobile@2x.jpg 2x" alt="Мост дьявола">
+                  </picture>
+                </a>
                 <div class="photo__wrapper-sign">
                   <div class="photo__wrapper-text">
                     <p class="photo__subtitle">Мост дьявола</p>

@@ -36,12 +36,11 @@
 .footer__copyright {
   position: relative;
   display: table;
-  padding: 42px 42px 0 0;
-  margin: 0 auto;
+  padding-right: 42px;
+  margin: 42px auto 0;
 
   @media @tablet {
-    margin: 8px 0 0 auto;
-    padding-top: 0;
+    margin: 10px 0 0 auto;
   }
 }
 
@@ -52,10 +51,14 @@
 
 .footer__developer {
   position: absolute;
-  padding-left: 14px;
-  color: #000000;
   top: 0;
   right: 0;
+  padding-left: 14px;
+  color: #000000;
+
+  @media @tablet {
+    top: -3px;
+  }
 
   &:hover {
     color: @secondaryBackgroundColor;

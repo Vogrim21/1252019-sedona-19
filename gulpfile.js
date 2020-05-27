@@ -36,9 +36,7 @@ gulp.task('script', function () {
   return gulp.src([
     'node_modules/picturefill/dist/picturefill.min.js',
     'node_modules/svg4everybody/dist/svg4everybody.min.js',
-    'source/js/svg.js',
-    'source/js/menu.js',
-    'source/js/modal.js'
+    'source/js/*.js'
   ], {
     sourcemaps: true
   }).pipe(plumber())
@@ -98,7 +96,7 @@ gulp.task('server', function () {
   server.init({
     server: 'build/',
     notify: false,
-    open: false,
+    open: true,
     cors: true,
     ui: false
   });
