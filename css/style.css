@@ -1064,7 +1064,6 @@ svg {
 }
 .video__player {
   position: relative;
-  max-width: 800px;
 }
 .video__src-wrapper {
   position: relative;
